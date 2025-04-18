@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Syscalls
 --------
 
@@ -373,3 +374,9 @@ Untested syscalls
     * - removexattrat
       - open_tree_attr
       -
+||||||| merged common ancestors
+=======
+.. warning::
+
+    Can't download syscall_n64.tbl from kernel sources (HTTP Error 403: Forbidden)
+>>>>>>> b8eea7240c32df26e533253c8d833a8cb52f3e40
