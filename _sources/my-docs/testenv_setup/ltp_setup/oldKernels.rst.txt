@@ -10,16 +10,19 @@ Challenges with Older Kernels
 -------------------------------
 
 1. **Header Availability Issues**
+
    - Missing headers in modern distributions
    - Incompatible header structures between versions
    - Deprecated interfaces and macros
 
 2. **Toolchain Compatibility**
+
    - Modern compilers may reject older kernel code
    - Changes in ABI/API expectations
    - Linker behavior differences
 
 3. **Dependency Management**
+
    - Circular dependencies between kernel headers and userspace libraries
    - Missing or outdated build tools
 
@@ -68,19 +71,23 @@ Best Practices for Working with Older Kernels
 -----------------------------------------------
 
 1. **Isolation Strategies**
+
    - Use containers or VMs with period-appropriate distributions
    - Maintain dedicated build environments
 
 2. **Compatibility Layers**
+
    - Create targeted symbolic links (as in our solution)
    - Develop wrapper headers for critical interfaces
 
 3. **Documentation**
+
    - Clearly record all workarounds
    - Document original and modified paths
    - Include rationale for each decision
 
 4. **Risk Management**
+
    - Limit system modifications to build requirements
    - Prefer user-space solutions over system-wide changes
    - Maintain cleanup procedures
