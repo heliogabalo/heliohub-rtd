@@ -72,11 +72,25 @@ Available documents about *git repositories*.
 .. ..
 .. toctree::
    :maxdepth: 1
+   :caption: Mathematical:
+   
+   gnuPlot-usage.rst
+   gnuPlot-intro.rst
+   newOrigin2.rst
+   mathSymbols.rst
+
+
+Available documents about Mathematical representation.
+
+.. ..
+.. ..
+.. toctree::
+   :maxdepth: 1
    :caption: Mail:
    
    mailDrafts.rst
    mailCmds.rst
-   
+      
    
 Available documents about mail agents agents and related content.
 
@@ -90,10 +104,11 @@ Available documents about mail agents agents and related content.
    regexNotation.rst
    a_diffCounter.rst
    verticalS.rst
-   mathSymbols.rst
    pipeToLog.rst
    hardening-timedate-summary.rst
    hardening-timedate.rst
+
+   
    
 Miscellaneous documents.
 >>>>>>> b8eea7240c32df26e533253c8d833a8cb52f3e40

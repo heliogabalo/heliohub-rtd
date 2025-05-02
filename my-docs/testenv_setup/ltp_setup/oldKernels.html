@@ -155,17 +155,26 @@
 <section id="challenges-with-older-kernels">
 <h2>Challenges with Older Kernels<a class="headerlink" href="#challenges-with-older-kernels" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
-<li><p><strong>Header Availability Issues</strong>
-- Missing headers in modern distributions
-- Incompatible header structures between versions
-- Deprecated interfaces and macros</p></li>
-<li><p><strong>Toolchain Compatibility</strong>
-- Modern compilers may reject older kernel code
-- Changes in ABI/API expectations
-- Linker behavior differences</p></li>
-<li><p><strong>Dependency Management</strong>
-- Circular dependencies between kernel headers and userspace libraries
-- Missing or outdated build tools</p></li>
+<li><p><strong>Header Availability Issues</strong></p>
+<ul class="simple">
+<li><p>Missing headers in modern distributions</p></li>
+<li><p>Incompatible header structures between versions</p></li>
+<li><p>Deprecated interfaces and macros</p></li>
+</ul>
+</li>
+<li><p><strong>Toolchain Compatibility</strong></p>
+<ul class="simple">
+<li><p>Modern compilers may reject older kernel code</p></li>
+<li><p>Changes in ABI/API expectations</p></li>
+<li><p>Linker behavior differences</p></li>
+</ul>
+</li>
+<li><p><strong>Dependency Management</strong></p>
+<ul class="simple">
+<li><p>Circular dependencies between kernel headers and userspace libraries</p></li>
+<li><p>Missing or outdated build tools</p></li>
+</ul>
+</li>
 </ol>
 </section>
 <section id="case-study-ltp-build-system-header-missing-issue">
@@ -215,20 +224,32 @@
 <section id="best-practices-for-working-with-older-kernels">
 <h2>Best Practices for Working with Older Kernels<a class="headerlink" href="#best-practices-for-working-with-older-kernels" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
-<li><p><strong>Isolation Strategies</strong>
-- Use containers or VMs with period-appropriate distributions
-- Maintain dedicated build environments</p></li>
-<li><p><strong>Compatibility Layers</strong>
-- Create targeted symbolic links (as in our solution)
-- Develop wrapper headers for critical interfaces</p></li>
-<li><p><strong>Documentation</strong>
-- Clearly record all workarounds
-- Document original and modified paths
-- Include rationale for each decision</p></li>
-<li><p><strong>Risk Management</strong>
-- Limit system modifications to build requirements
-- Prefer user-space solutions over system-wide changes
-- Maintain cleanup procedures</p></li>
+<li><p><strong>Isolation Strategies</strong></p>
+<ul class="simple">
+<li><p>Use containers or VMs with period-appropriate distributions</p></li>
+<li><p>Maintain dedicated build environments</p></li>
+</ul>
+</li>
+<li><p><strong>Compatibility Layers</strong></p>
+<ul class="simple">
+<li><p>Create targeted symbolic links (as in our solution)</p></li>
+<li><p>Develop wrapper headers for critical interfaces</p></li>
+</ul>
+</li>
+<li><p><strong>Documentation</strong></p>
+<ul class="simple">
+<li><p>Clearly record all workarounds</p></li>
+<li><p>Document original and modified paths</p></li>
+<li><p>Include rationale for each decision</p></li>
+</ul>
+</li>
+<li><p><strong>Risk Management</strong></p>
+<ul class="simple">
+<li><p>Limit system modifications to build requirements</p></li>
+<li><p>Prefer user-space solutions over system-wide changes</p></li>
+<li><p>Maintain cleanup procedures</p></li>
+</ul>
+</li>
 </ol>
 </section>
 <section id="conclusion">
