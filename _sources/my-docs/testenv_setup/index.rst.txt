@@ -43,6 +43,7 @@ Available documents covering the configuration of virtual machine for testing pu
    ltp_setup/autoConfHd.rst
    ltp_setup/directoryPermissions.rst
    ltp_setup/gccSearchPath.rst
+   ltp_setup/Autotools_overview.rst
 
 
 

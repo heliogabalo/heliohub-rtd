@@ -16,6 +16,7 @@ This section contains miscellaneous topics that do not fit into the other catego
    stagedLogs.rst
    stashedTask.rst
    stashingFiles.rst
+   gitIssue.rst
    
 Available documents about *git repositories*.
 
@@ -32,6 +33,22 @@ Available documents about *git repositories*.
 
 
 Available documents about Mathematical representation.
+
+
+.. ..
+.. ..
+.. toctree::
+   :maxdepth: 1
+   :caption: AWS:
+   
+   aws-overview.rst
+      
+   
+Available documents about Amazon Web Services and related content.
+
+
+
+
 
 .. ..
 .. ..
@@ -58,6 +75,7 @@ Available documents about mail agents agents and related content.
    pipeToLog.rst
    hardening-timedate-summary.rst
    hardening-timedate.rst
+   keyboard_debug.rst
 
    
    
