@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John von Neumann &mdash; Linux Test Project 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/js/pathTruncator.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Unordered Topics" href="../Unordered/index.html" />
+    <link rel="prev" title="Álgebra de Boole en Programación: Contexto Histórico y Aplicaciones" href="GeorgeBoole.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Linux Test Project
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">For users</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../users/quick_start.html">Installation and tests execution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../users/setup_tests.html">Tests setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../users/supported_systems.html">Supported systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../users/stats.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../users/test_catalog.html">Test catalog</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">For developers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/setup_mailinglist.html">Setting up the Mailing list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/writing_tests.html">Writing tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/test_case_tutorial.html">Test case tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/api_c_tests.html">LTP C API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/api_shell_tests.html">LTP shell API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/api_network_tests.html">Developing using network API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/api_kvm_tests.html">Developing using KVM API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/ltp_library.html">LTP Library guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/build_system.html">Build system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers/documentation.html">Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">For maintainers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../maintainers/patch_review.html">Patch review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../maintainers/ltp_release_procedure.html">Release process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Custom Documents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Topic Index</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/index.html">Testing Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../driver_dev/index.html">Driver Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hw_resources/index.html">Hardware and System Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys_config/index.html">System Configuration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Sistemas Microinformaticos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GeorgeBoole.html">Álgebra de Boole en Programación: Contexto Histórico y Aplicaciones</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">John von Neumann</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#decada-de-1930-fundamentos-matematicos-y-computacion">1. Década de 1930: Fundamentos matemáticos y computación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decada-de-1940-arquitectura-de-computadoras-y-eniac">2. Década de 1940: Arquitectura de computadoras y ENIAC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#finales-de-los-1940s-instituto-de-estudios-avanzados-ias-y-la-maquina-ias">3. Finales de los 1940s: Instituto de Estudios Avanzados (IAS) y la máquina IAS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decada-de-1950-teoria-de-algoritmos-y-aplicaciones">4. Década de 1950: Teoría de algoritmos y aplicaciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ultimos-anos-hasta-su-muerte-en-1957">5. Últimos años (hasta su muerte en 1957)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#legado-en-programacion-y-tecnologia">Legado en programación y tecnología</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Unordered/index.html">Unordered Topics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Linux Test Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Topic Index</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Sistemas Microinformaticos</a></li>
+      <li class="breadcrumb-item active">John von Neumann</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/my-docs/sistemasMicroinformaticos/VonNeumann.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="john-von-neumann">
+<h1>John von Neumann<a class="headerlink" href="#john-von-neumann" title="Permalink to this heading"></a></h1>
+<p>Fue una figura clave en el desarrollo tecnológico y la programación, contribuyendo de manera fundamental en áreas como la arquitectura de computadoras, la teoría de juegos, la física cuántica y los algoritmos. A continuación, se presenta una cronología de sus contribuciones más relevantes:</p>
+<section id="decada-de-1930-fundamentos-matematicos-y-computacion">
+<h2>1. Década de 1930: Fundamentos matemáticos y computación<a class="headerlink" href="#decada-de-1930-fundamentos-matematicos-y-computacion" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Von Neumann trabajó en teoría de conjuntos, análisis funcional y mecánica cuántica, sentando bases matemáticas que luego aplicarían en computación.</p></li>
+<li><p>En <strong>1936</strong>, contribuyó a la teoría de <strong>autómatas celulares</strong>, un concepto que influiría en la simulación por computadora.</p></li>
+</ul>
+</section>
+<section id="decada-de-1940-arquitectura-de-computadoras-y-eniac">
+<h2>2. Década de 1940: Arquitectura de computadoras y ENIAC<a class="headerlink" href="#decada-de-1940-arquitectura-de-computadoras-y-eniac" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>1945</strong>: Propuso la <strong>Arquitectura de von Neumann</strong>, un modelo que establecía que programas y datos debían almacenarse en la misma memoria. Este diseño sigue siendo la base de las computadoras modernas.</p></li>
+<li><p>Colaboró en el desarrollo del <strong>ENIAC</strong> (primer computador electrónico de propósito general), aunque su mayor impacto fue en el sucesor, el <strong>EDVAC</strong>, donde su informe (<strong>First Draft of a Report on the EDVAC</strong>, 1945) definió los principios de programación almacenada.</p></li>
+</ul>
+</section>
+<section id="finales-de-los-1940s-instituto-de-estudios-avanzados-ias-y-la-maquina-ias">
+<h2>3. Finales de los 1940s: Instituto de Estudios Avanzados (IAS) y la máquina IAS<a class="headerlink" href="#finales-de-los-1940s-instituto-de-estudios-avanzados-ias-y-la-maquina-ias" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>En <strong>1946</strong>, lideró el proyecto de la <strong>computadora IAS</strong> en Princeton, basada en su arquitectura. Esta máquina influyó en diseños posteriores como el <strong>IBM 701</strong>.</p></li>
+<li><p>Promovió el uso de lenguajes de programación y compiladores, aunque aún en etapas tempranas.</p></li>
+</ul>
+</section>
+<section id="decada-de-1950-teoria-de-algoritmos-y-aplicaciones">
+<h2>4. Década de 1950: Teoría de algoritmos y aplicaciones<a class="headerlink" href="#decada-de-1950-teoria-de-algoritmos-y-aplicaciones" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>1951</strong>: Trabajó en el <strong>MANIAC I</strong>, una computadora usada para simulaciones en física nuclear y meteorología.</p></li>
+<li><p>Contribuyó al desarrollo de los <strong>primeros algoritmos para computadoras</strong>, incluyendo métodos numéricos y el <strong>algoritmo Merge Sort</strong>.</p></li>
+<li><p>En <strong>1953</strong>, propuso el <strong>generador de números pseudoaleatorios</strong> (algoritmo de von Neumann), clave en simulaciones.</p></li>
+</ul>
+</section>
+<section id="ultimos-anos-hasta-su-muerte-en-1957">
+<h2>5. Últimos años (hasta su muerte en 1957)<a class="headerlink" href="#ultimos-anos-hasta-su-muerte-en-1957" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Asesoró en proyectos de defensa y energía atómica, donde la computación jugó un papel crucial (ej: cálculos para la bomba de hidrógeno).</p></li>
+<li><p>Su trabajo en <strong>teoría de la computabilidad</strong> y <strong>máquinas autorreplicantes</strong> (antecesor conceptual de la inteligencia artificial y la vida artificial) fue pionero.</p></li>
+</ul>
+</section>
+<section id="legado-en-programacion-y-tecnologia">
+<h2>Legado en programación y tecnología<a class="headerlink" href="#legado-en-programacion-y-tecnologia" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>La <strong>Arquitectura de von Neumann</strong> sigue siendo fundamental en el diseño de CPUs.</p></li>
+<li><p>Sus ideas influyeron en lenguajes de programación y la formalización de algoritmos.</p></li>
+<li><p>Su enfoque interdisciplinario (matemáticas, física, ingeniería) aceleró el desarrollo de la computación moderna.</p></li>
+</ul>
+<p>Von Neumann no fue un programador en el sentido actual, pero sus contribuciones teóricas y prácticas sentaron las bases para la programación y la tecnología digital.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="GeorgeBoole.html" class="btn btn-neutral float-left" title="Álgebra de Boole en Programación: Contexto Histórico y Aplicaciones" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Unordered/index.html" class="btn btn-neutral float-right" title="Unordered Topics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Linux Test Project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

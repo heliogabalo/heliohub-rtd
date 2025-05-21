@@ -1,0 +1,44 @@
+.. SPDX-License-Identifier: GPL-2.0-or-later
+
+Sistemas Microinformaticos
+=============================
+
+Esta sección muestra los documentos relativos al curso Sistemas Microinformáticos.
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Historia:
+
+   evolucionProcesadores.rst
+   GeorgeBoole.rst
+   VonNeumann.rst
+
+
+.. note::
+
+	Esta sección contiene documentos de caracter académico o historico. También podrá inncluir ejercicios propuestos.
+
+.. toctree::
+   :maxdepth: 1
+   :caption: OS installation:
+
+   evolucionProcesadores.rst
+   
+
+.. tip::
+
+	Documentos disponibles sobre la instalación del sistema operativo. También podrá inncluir ejercicios propuestos.
+
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Redes:
+
+   evolucionProcesadores.rst
+   
+   
+.. tip::
+   
+	Instalación configuración de redes. También podrá inncluir ejercicios propuestos.
