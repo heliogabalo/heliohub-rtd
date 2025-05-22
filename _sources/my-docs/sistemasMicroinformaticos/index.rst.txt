@@ -12,7 +12,9 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 
    evolucionProcesadores.rst
    GeorgeBoole.rst
+   arquitecturaVonNeuman.rst
    VonNeumann.rst
+   Memorias.rst
 
 
 .. note::
@@ -42,3 +44,14 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 .. tip::
    
 	Instalación configuración de redes. También podrá inncluir ejercicios propuestos.
+	
+	
+	
+Downloadable files
+=====================
+
+Click to download: :download:`Tema 1 <descargas/Tema-1-Arquitecturas_de_un_sistema_microinformático.pdf>`
+
+.. warning::
+   
+	Esta sección contiene recursos descargables. Esta sección está sugeta a cambios sin previo aviso.

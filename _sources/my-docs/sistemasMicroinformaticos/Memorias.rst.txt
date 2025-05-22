@@ -1,0 +1,155 @@
+Tipos y características de memoria
+=====================================
+
+En los equipos de cómputo se utilizan diversos tipos de memoria, cada una con funciones específicas. A continuación, se enumeran los principales tipos:
+
+1. Memoria Principal (RAM - Memoria de Acceso Aleatorio)
+-----------------------------------------------------------
+
+- **DRAM (Dynamic RAM)**: Volátil; necesita refrescarse constantemente.
+- **SRAM (Static RAM)**: Más rápida que la DRAM y no necesita refresco, pero más cara.
+- **DDR (Double Data Rate)**: Versiones DDR, DDR2, DDR3, DDR4, DDR5, con mejoras en velocidad y eficiencia.
+
+
+2. Memoria Caché
+-------------------
+
+- Integrada en el procesador (niveles L1, L2, L3).
+- Muy rápida y pequeña; almacena datos de uso frecuente.
+
+
+3. Memoria ROM (Read-Only Memory)
+-----------------------------------
+
+- No volátil; contiene datos permanentes o semipermanentes.
+- Tipos: **PROM, EPROM, EEPROM**.
+- Almacena firmware, como el BIOS o UEFI.
+
+
+4. Memoria Virtual
+---------------------
+
+- Espacio del disco duro que el sistema usa como si fuera RAM.
+- Más lenta, pero útil cuando la RAM física se llena.
+
+
+5. Memoria Flash
+-------------------
+
+- No volátil; utilizada en SSDs, USBs, tarjetas SD.
+- Rápida, resistente y sin partes móviles.
+
+
+6. Memoria de Almacenamiento Secundario
+------------------------------------------
+
+- **HDD (Disco Duro)**: Más lento, pero con gran capacidad.
+- **SSD (Unidad de Estado Sólido)**: Más rápido que el HDD; utiliza memoria flash.
+- **CD/DVD/Blu-Ray**: Medios ópticos, en desuso para la mayoría de los casos.
+
+
+7. Memoria Caché del Disco
+----------------------------
+
+* Presente en discos duros y SSDs para mejorar el rendimiento de lectura/escritura.
+
+En Windows podemos consultar este dato mediante el siguiente comando en PowerShell:
+
+``Get-CimInstance Win32_PhysicalMemory | Format-Table Manufacturer, Speed, MemoryType, Capacity``
+
+También es posible hacer la consulta en el administrador de tareas, en el apartado memoria.
+Sin embargo el dato(tipo de memoria) no siempre aparece explícitamente, aunque si nos 
+fijamos en la **velocidad** y la relacionamos con la **capacidad** del módulo 
+y el **factor de forma**, de la memoria instalada en el sistema; por ejemplo:
+ 
+- ``8GB a 2666 factor de forma DIMM``, podremos determinar con una búsque en google: ``memoria ram dimm 8gb a 2666``; que dicha memoria pertenece al tipo **DDR (Double Data Rate)**, en estecaso en particular se trataría de una memoria DDR4.
+Con el comando de PowerShell que indicabamos anteriormente, podremos ver también el
+fabricante, en este caso::
+
+   PS C:\Users\Bits-2> Get-CimInstance Win32_PhysicalMemory | Format-Table Manufacturer, Speed, MemoryType, Capacity
+
+   Manufacturer       Speed MemoryType   Capacity
+   ------------       ----- ----------   --------
+   Crucial Technology  2666          0 8589934592
+
+   PS C:\Users\Bits-2>
+
+
+Ancho de Banda y Velocidad de Reloj
+--------------------------------------
+
+La **memoria RAM (Random Access Memory)** es un componente clave en sistemas informáticos, ya que determina la velocidad de acceso a datos temporales. Dos factores críticos que afectan su rendimiento son:
+
+1. **Velocidad de Reloj (Frecuencia)**
+2. **Ancho de Banda**
+
+1. Velocidad de Reloj (Frecuencia)
+-------------------------------------
+
+- **Definición**: Indica los ciclos de operación por segundo, medidos en **MHz** o **GHz**.
+- **Ejemplo**: DDR4-3200 opera a **3200 MHz** (3.2 mil millones de ciclos/segundo).
+- **Impacto**:
+  - Mayor velocidad → Más operaciones por segundo.
+  - El rendimiento real depende también de la **latencia (CL)**.
+
+**Relación con la Latencia (CAS Latency - CL)**:
+- Mide el retraso (en ciclos) entre solicitud y disponibilidad de datos.
+- Ejemplo comparativo:
+  - DDR4-3200 CL16 vs DDR4-3600 CL18.
+  - Aunque 3600 MHz es más rápido, su mayor CL puede reducir la ventaja.
+
+2. Ancho de Banda
+--------------------
+
+- **Definición**: Cantidad de datos transferidos por segundo (GB/s).
+- **Factores que lo determinan**:
+  - Velocidad de reloj (MHz).
+  - Ancho del bus de datos (normalmente **64 bits** en Single Channel).
+  - Número de canales (Dual/Quad Channel multiplica el ancho efectivo).
+
+**Cálculo del Ancho de Banda**:
+Fórmula para módulos DDR (Double Data Rate):
+
+.. math::
+
+   \text{Ancho de Banda (GB/s)} = \frac{\text{Velocidad efectiva (MHz)} \times \text{Ancho del bus (bits)}}{8}
+
+**Ejemplos**:
+
+- **Single Channel (DDR4-3200)**:
+  - :math:`\frac{3200 \times 64}{8} = 25,\!600\ \text{MB/s} = 25.6\ \text{GB/s}`
+
+- **Dual Channel (DDR4-3200)**:
+  - :math:`25.6\ \text{GB/s} \times 2 = 51.2\ \text{GB/s}`
+
+**Tabla Comparativa (Ancho de Banda Single Channel)**:
+
++----------------+-------------------+-----------------------------+
+|   Tipo de RAM  |  Velocidad (MHz)  |    Ancho de Banda (GB/s)    |
++================+===================+=============================+
+|   DDR4-2400    |       2400        |             19.2            |
++----------------+-------------------+-----------------------------+
+|   DDR4-3200    |       3200        |             25.6            |
++----------------+-------------------+-----------------------------+
+|   DDR5-4800    |       4800        |             38.4            |
++----------------+-------------------+-----------------------------+
+|   DDR5-6400    |       6400        |             51.2            |
++----------------+-------------------+-----------------------------+
+
+3. ¿Qué es Más Importante?
+----------------------------
+
+- **Uso general (ofimática/navegación)**: Velocidad y ancho de banda no son críticos.
+- **Gaming/Edición de video**: Alta velocidad (≥3200 MHz) + bajo CL para mejor rendimiento.
+- **Servidores/Workstations**: Ancho de banda alto (Dual/Quad Channel + DDR5).
+
+**Conclusión**:
+- **Velocidad de reloj**: Define la rapidez interna de la RAM.
+- **Ancho de banda**: Determina el volumen de datos transferibles al CPU.
+- **Optimización ideal**: Equilibrar **alta frecuencia + baja latencia + múltiples canales**.
+
+
+
+
+
+
