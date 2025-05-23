@@ -75,6 +75,66 @@ fabricante, en este caso::
    PS C:\Users\Bits-2>
 
 
+Módulos de Memoria GDDR
+--------------------------
+
+**modulos GDDR**: Son múdulos específicos para tarjetas de vídeo que contienen memoria GDDR-SDRAM.
+
+- GDDR (Graphics Double Data Rate)
+- SDRAM (Synchronous Dynamic Random-Acces Memory)
+
+La memoria GDDR (Graphics Double Data Rate) es un tipo de memoria RAM especializada utilizada en tarjetas gráficas y sistemas de procesamiento de gráficos. Está optimizada para ofrecer **altos anchos de banda** y **baja latencia**, esenciales en aplicaciones como videojuegos, diseño gráfico, simulaciones y aprendizaje automático.
+
+Características Generales
+----------------------------
+
+- **Alto ancho de banda**: Capacidad para transferir grandes cantidades de datos por segundo.
+- **Interfaz especializada**: Diseñada para acceso secuencial de grandes bloques de datos.
+- **Memoria dedicada**: Usada exclusivamente por la GPU, no compartida con la CPU.
+- **Versiones disponibles**:
+
+  - ``GDDR3``: Antiguo estándar, aún presente en hardware más antiguo.
+  - ``GDDR5``: Muy común en generaciones anteriores de GPUs.
+  - ``GDDR5X``: Variante mejorada con mayor velocidad.
+  - ``GDDR6``: Estándar moderno en muchas GPUs actuales.
+  - ``GDDR6X``: Usada en tarjetas gráficas de gama alta como la RTX 3080 y superiores.
+
+- **Prefetching**: Técnica que permite al chip leer bloques de datos más grandes por ciclo, aumentando la eficiencia.
+
+Comparación con DDR
+----------------------
+
++----------------------+-------------------------+----------------------------+
+| Característica       | GDDR                    | DDR (DDR4, DDR5)           |
++======================+=========================+============================+
+| Uso principal        | GPU (gráficos)          | CPU (memoria del sistema)  |
++----------------------+-------------------------+----------------------------+
+| Ancho de banda       | Muy alto                | Moderado                   |
++----------------------+-------------------------+----------------------------+
+| Latencia             | Mayor que DDR           | Baja                       |
++----------------------+-------------------------+----------------------------+
+| Arquitectura         | Más canales y buffers   | Menos canales              |
++----------------------+-------------------------+----------------------------+
+| Consumo energético   | Optimizado para gráficos| Optimizado para eficiencia |
++----------------------+-------------------------+----------------------------+
+
+Aplicaciones Comunes
+-----------------------
+
+- Tarjetas gráficas (NVIDIA, AMD)
+- Consolas de videojuegos (PS4, PS5, Xbox Series X/S)
+- Workstations profesionales para edición de video, CAD y renderizado 3D
+- Algunos aceleradores de inteligencia artificial
+
+
+Módulos de Memoria SO-DIMM
+----------------------------
+
+**modulos SO-DIMM**: Módulos específicos para portátiles. Se trata de una versión reducida de los módulos modulos de memoria con contactos duales(factor de forma DIMM).
+
+- En cuanto a características y prestaciones, son similares a las de un equipo convencional
+
+
 Ancho de Banda y Velocidad de Reloj
 --------------------------------------
 

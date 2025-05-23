@@ -25,7 +25,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Unordered Topics" href="../Unordered/index.html" />
+    <link rel="next" title="Periféricos clasificados por tipo" href="perifericos.html" />
     <link rel="prev" title="John von Neumann" href="VonNeumann.html" /> 
 </head>
 
@@ -95,12 +95,18 @@
 <li class="toctree-l4"><a class="reference internal" href="#memoria-flash">5. Memoria Flash</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#memoria-de-almacenamiento-secundario">6. Memoria de Almacenamiento Secundario</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#memoria-cache-del-disco">7. Memoria Caché del Disco</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos-de-memoria-gddr">Módulos de Memoria GDDR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caracteristicas-generales">Características Generales</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#comparacion-con-ddr">Comparación con DDR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#aplicaciones-comunes">Aplicaciones Comunes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos-de-memoria-so-dimm">Módulos de Memoria SO-DIMM</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ancho-de-banda-y-velocidad-de-reloj">Ancho de Banda y Velocidad de Reloj</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#velocidad-de-reloj-frecuencia">1. Velocidad de Reloj (Frecuencia)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ancho-de-banda">2. Ancho de Banda</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#que-es-mas-importante">3. ¿Qué es Más Importante?</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="perifericos.html">Periféricos clasificados por tipo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
 </ul>
@@ -211,6 +217,82 @@ fabricante, en este caso:</p>
 </pre></div>
 </div>
 </section>
+<section id="modulos-de-memoria-gddr">
+<h2>Módulos de Memoria GDDR<a class="headerlink" href="#modulos-de-memoria-gddr" title="Permalink to this heading"></a></h2>
+<p><strong>modulos GDDR</strong>: Son múdulos específicos para tarjetas de vídeo que contienen memoria GDDR-SDRAM.</p>
+<ul class="simple">
+<li><p>GDDR (Graphics Double Data Rate)</p></li>
+<li><p>SDRAM (Synchronous Dynamic Random-Acces Memory)</p></li>
+</ul>
+<p>La memoria GDDR (Graphics Double Data Rate) es un tipo de memoria RAM especializada utilizada en tarjetas gráficas y sistemas de procesamiento de gráficos. Está optimizada para ofrecer <strong>altos anchos de banda</strong> y <strong>baja latencia</strong>, esenciales en aplicaciones como videojuegos, diseño gráfico, simulaciones y aprendizaje automático.</p>
+</section>
+<section id="caracteristicas-generales">
+<h2>Características Generales<a class="headerlink" href="#caracteristicas-generales" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Alto ancho de banda</strong>: Capacidad para transferir grandes cantidades de datos por segundo.</p></li>
+<li><p><strong>Interfaz especializada</strong>: Diseñada para acceso secuencial de grandes bloques de datos.</p></li>
+<li><p><strong>Memoria dedicada</strong>: Usada exclusivamente por la GPU, no compartida con la CPU.</p></li>
+<li><p><strong>Versiones disponibles</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">GDDR3</span></code>: Antiguo estándar, aún presente en hardware más antiguo.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GDDR5</span></code>: Muy común en generaciones anteriores de GPUs.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GDDR5X</span></code>: Variante mejorada con mayor velocidad.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GDDR6</span></code>: Estándar moderno en muchas GPUs actuales.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GDDR6X</span></code>: Usada en tarjetas gráficas de gama alta como la RTX 3080 y superiores.</p></li>
+</ul>
+</li>
+<li><p><strong>Prefetching</strong>: Técnica que permite al chip leer bloques de datos más grandes por ciclo, aumentando la eficiencia.</p></li>
+</ul>
+</section>
+<section id="comparacion-con-ddr">
+<h2>Comparación con DDR<a class="headerlink" href="#comparacion-con-ddr" title="Permalink to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Característica</p></th>
+<th class="head"><p>GDDR</p></th>
+<th class="head"><p>DDR (DDR4, DDR5)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Uso principal</p></td>
+<td><p>GPU (gráficos)</p></td>
+<td><p>CPU (memoria del sistema)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ancho de banda</p></td>
+<td><p>Muy alto</p></td>
+<td><p>Moderado</p></td>
+</tr>
+<tr class="row-even"><td><p>Latencia</p></td>
+<td><p>Mayor que DDR</p></td>
+<td><p>Baja</p></td>
+</tr>
+<tr class="row-odd"><td><p>Arquitectura</p></td>
+<td><p>Más canales y buffers</p></td>
+<td><p>Menos canales</p></td>
+</tr>
+<tr class="row-even"><td><p>Consumo energético</p></td>
+<td><p>Optimizado para gráficos</p></td>
+<td><p>Optimizado para eficiencia</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aplicaciones-comunes">
+<h2>Aplicaciones Comunes<a class="headerlink" href="#aplicaciones-comunes" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Tarjetas gráficas (NVIDIA, AMD)</p></li>
+<li><p>Consolas de videojuegos (PS4, PS5, Xbox Series X/S)</p></li>
+<li><p>Workstations profesionales para edición de video, CAD y renderizado 3D</p></li>
+<li><p>Algunos aceleradores de inteligencia artificial</p></li>
+</ul>
+</section>
+<section id="modulos-de-memoria-so-dimm">
+<h2>Módulos de Memoria SO-DIMM<a class="headerlink" href="#modulos-de-memoria-so-dimm" title="Permalink to this heading"></a></h2>
+<p><strong>modulos SO-DIMM</strong>: Módulos específicos para portátiles. Se trata de una versión reducida de los módulos modulos de memoria con contactos duales(factor de forma DIMM).</p>
+<ul class="simple">
+<li><p>En cuanto a características y prestaciones, son similares a las de un equipo convencional</p></li>
+</ul>
+</section>
 <section id="ancho-de-banda-y-velocidad-de-reloj">
 <h2>Ancho de Banda y Velocidad de Reloj<a class="headerlink" href="#ancho-de-banda-y-velocidad-de-reloj" title="Permalink to this heading"></a></h2>
 <p>La <strong>memoria RAM (Random Access Memory)</strong> es un componente clave en sistemas informáticos, ya que determina la velocidad de acceso a datos temporales. Dos factores críticos que afectan su rendimiento son:</p>
@@ -305,7 +387,7 @@ Fórmula para módulos DDR (Double Data Rate):</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="VonNeumann.html" class="btn btn-neutral float-left" title="John von Neumann" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../Unordered/index.html" class="btn btn-neutral float-right" title="Unordered Topics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="perifericos.html" class="btn btn-neutral float-right" title="Periféricos clasificados por tipo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
