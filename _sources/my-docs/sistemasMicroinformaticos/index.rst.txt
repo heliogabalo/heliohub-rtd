@@ -16,6 +16,7 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    VonNeumann.rst
    Memorias.rst
    perifericos.rst
+   integratedCards.rst
 
 
 .. note::

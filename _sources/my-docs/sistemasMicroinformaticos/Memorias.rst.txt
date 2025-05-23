@@ -130,7 +130,7 @@ Aplicaciones Comunes
 Módulos de Memoria SO-DIMM
 ----------------------------
 
-**modulos SO-DIMM**: Módulos específicos para portátiles. Se trata de una versión reducida de los módulos modulos de memoria con contactos duales(factor de forma DIMM).
+**modulos SO-DIMM**: Módulos específicos para portátiles. Se trata de una versión reducida de los módulos de memoria con contactos duales(factor de forma DIMM).
 
 - En cuanto a características y prestaciones, son similares a las de un equipo convencional
 
