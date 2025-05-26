@@ -17,6 +17,7 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    Memorias.rst
    perifericos.rst
    integratedCards.rst
+   Buses.rst
 
 
 .. note::
@@ -57,4 +58,4 @@ Downloadable files
 
 .. warning::
    
-	Esta sección contiene recursos descargables. Esta sección está sugeta a cambios sin previo aviso.
+	Esta sección contiene recursos descargables y podría estar sugeta a cambios sin previo aviso.
