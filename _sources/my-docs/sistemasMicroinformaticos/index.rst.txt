@@ -20,6 +20,8 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    Buses.rst
    anchoBusGPU.rst
    conectoresDelEquipo.rst
+   UEFI.rst
+   UEFI-refs.rst
 
 
 .. note::
