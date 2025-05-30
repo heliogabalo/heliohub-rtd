@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DISKPART - particionado &mdash; Linux Test Project 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/js/pathTruncator.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Unordered Topics" href="../../Unordered/index.html" />
+    <link rel="prev" title="Caracteristicas del equipo" href="caracteristicasEquipo.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Linux Test Project
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">For users</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/quick_start.html">Installation and tests execution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/setup_tests.html">Tests setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/supported_systems.html">Supported systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/stats.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/test_catalog.html">Test catalog</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">For developers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/setup_mailinglist.html">Setting up the Mailing list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/writing_tests.html">Writing tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/test_case_tutorial.html">Test case tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_c_tests.html">LTP C API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_shell_tests.html">LTP shell API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_network_tests.html">Developing using network API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_kvm_tests.html">Developing using KVM API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/ltp_library.html">LTP Library guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/build_system.html">Build system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/documentation.html">Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">For maintainers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../maintainers/patch_review.html">Patch review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../maintainers/ltp_release_procedure.html">Release process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Custom Documents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Topic Index</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../testenv_setup/index.html">Testing Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/index.html">Driver Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/index.html">Hardware and System Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sys_config/index.html">System Configuration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Sistemas Microinformaticos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GeorgeBoole.html">Álgebra de Boole en Programación: Contexto Histórico y Aplicaciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../arquitecturaVonNeuman.html">La arquitectura Von Neumann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VonNeumann.html">John von Neumann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Memorias.html">Tipos y características de memoria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../perifericos.html">Periféricos clasificados por tipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../integratedCards.html">Verificar si la placa base integra tarjeta gráfica (GPU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Buses.html">Buses del equipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../anchoBusGPU.html">Interpretación del “Ancho del Bus” en Tarjetas Gráficas (GPU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../conectoresDelEquipo.html">Conectores externos del equipo.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../UEFI.html">¿Qué es el estándar UEFI?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../UEFI-refs.html">Referenciando funciones en UEFI mediante identificadores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="caracteristicasEquipo.html">Caracteristicas del equipo</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">DISKPART - particionado</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#crear-particiones">Crear particiones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#permisos-de-ntfs">Permisos de NTFS</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#downloadable-files">Downloadable files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Unordered/index.html">Unordered Topics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Linux Test Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Topic Index</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Sistemas Microinformaticos</a></li>
+      <li class="breadcrumb-item active">DISKPART - particionado</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/my-docs/sistemasMicroinformaticos/OS/particionadorDeWindows.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="diskpart-particionado">
+<h1>DISKPART - particionado<a class="headerlink" href="#diskpart-particionado" title="Permalink to this heading"></a></h1>
+<p>Para comprobar el tipo de partición de un disco:</p>
+<ul>
+<li><p>Pulsamos tecla <kbd class="kbd docutils literal notranslate">Win</kbd> y escribimos: <code class="docutils literal notranslate"><span class="pre">símbolo</span> <span class="pre">de</span> <span class="pre">sistema</span></code> o</p></li>
+<li><p>Abrimos el símbolo de sistema con <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Win</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">R</kbd></kbd> y escribir <code class="docutils literal notranslate"><span class="pre">cmd</span></code>; a continuación escribimos los siguiente comandos:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">diskpark</span>
+<span class="mf">2.</span> <span class="nb">list</span> <span class="n">disk</span>
+<span class="mf">3.</span> <span class="n">select</span> <span class="n">disk</span> <span class="mi">1</span>
+<span class="mf">4.</span> <span class="nb">list</span> <span class="n">partition</span>
+<span class="mf">5.</span> <span class="n">clean</span>
+<span class="mf">6.</span> <span class="nb">list</span> <span class="n">partition</span>
+<span class="mf">7.</span> <span class="n">exit</span>
+</pre></div>
+</div>
+</li>
+<li><ol class="arabic simple">
+<li><p>El comando <code class="docutils literal notranslate"><span class="pre">diskpark</span></code>, abrirá una nueva instancia del <em>símbolo de sistema</em> con la aplicación.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>A continuación con el comando <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">disk</span></code>, serán listadas todas las particiones que estén definidas en el sistema. Si hay discos de otros sistemas operativos conectados, aparecerán también. Sin embargo el tipo de partición en éste caso, no aparecerá. Esto es así por que el gestor de discos de Windows no reconoce los sistemas de ficheros, ligados a esas <em>particiones externas</em>.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>Con el comando <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">disk</span> <span class="pre">Nº</span></code>, seleccionamos el disco donde va a crearse la nueva partición.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p>Volvemos a escribir el comando <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">disk</span></code>, y esta vez deberá aparecer un asterisco al principio de la línea, indicando el disco seleccionado. En este paso es importante asegurarse de que el disco seleccionado es el correcto, antes de continuar con el <em>borrado</em> de <strong>todo el disco</strong>.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="5">
+<li><p>El siguiente comando <code class="docutils literal notranslate"><span class="pre">clean</span></code>; borrará efectivamente todo el contenido deldisco; datos, particiones, tabla de particiones, <strong>todo</strong>.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="6">
+<li><p>Nuevamente utilizamos el comando <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">disk</span></code>, para asegurarnos de que el disco a sido borrado, y no queda rastro alguno de la partición que contenía.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="7">
+<li><p>Terminado el proceso, podremos cerrar la aplicación -recordamos que la aplicación se está ejecutando en una segunda instancia del <em>símbolo de sistema</em>; la cerramos con el comando <code class="docutils literal notranslate"><span class="pre">exit</span></code>.</p></li>
+</ol>
+</li>
+</ul>
+<section id="crear-particiones">
+<h2>Crear particiones<a class="headerlink" href="#crear-particiones" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Abrimos el administrador de discos</strong> presionando <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Win</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">R</kbd></kbd>, se abre un cuadro de diálogo; escribimos <code class="docutils literal notranslate"><span class="pre">diskmgmt.msc</span></code>. Otra alternativa;  mantenemos pulsalo  <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">control</kbd> <kbd class="kbd docutils literal notranslate">izquierdo</kbd> <kbd class="kbd docutils literal notranslate">+</kbd></kbd> click en botón derecho del ratón y seleccionamos <em>Administrador de discos</em>.</p></li>
+<li><p><strong>Identifica el USB</strong> Identificamos el disco, en este caso será un <em>USB</em>; el disco a particionar.</p></li>
+<li><p><strong>Crear nueva partición</strong> Click derecho en el espacio no asignado del <em>USB</em> y seleccionamos <em>Nuevo volumen simple</em>.</p></li>
+<li><p><strong>Seguir el asistente</strong> Habrá que especificar el tamaño, la letra de la unidad y el sistema de archivos(<em>NTFS o FAT32</em>).</p></li>
+<li><p><strong>Formatear la partición</strong> una vez creada la partición se deberá formatear, para hacerlo click derecho  en la partición y seleccionar <em>Formatear</em>.</p></li>
+</ul>
+</section>
+<section id="permisos-de-ntfs">
+<h2>Permisos de NTFS<a class="headerlink" href="#permisos-de-ntfs" title="Permalink to this heading"></a></h2>
+<p>Abrimos las propiedades de archivo y seleccionamos la pestaña
+seguridad. Click en el botón editar.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="caracteristicasEquipo.html" class="btn btn-neutral float-left" title="Caracteristicas del equipo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../Unordered/index.html" class="btn btn-neutral float-right" title="Unordered Topics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Linux Test Project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

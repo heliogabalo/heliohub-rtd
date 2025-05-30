@@ -104,7 +104,13 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="perifericos.html">Periféricos clasificados por tipo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="integratedCards.html">Verificar si la placa base integra tarjeta gráfica (GPU)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Buses.html">Buses del equipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="anchoBusGPU.html">Interpretación del “Ancho del Bus” en Tarjetas Gráficas (GPU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conectoresDelEquipo.html">Conectores externos del equipo.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UEFI.html">¿Qué es el estándar UEFI?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UEFI-refs.html">Referenciando funciones en UEFI mediante identificadores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OS/caracteristicasEquipo.html">Caracteristicas del equipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OS/particionadorDeWindows.html">DISKPART - particionado</a></li>
 <li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
 </ul>
 </li>
@@ -145,6 +151,7 @@
 <p>En los equipos de cómputo se utilizan diversos tipos de memoria, cada una con funciones específicas. A continuación, se enumeran los principales tipos:</p>
 <section id="memoria-principal-ram-memoria-de-acceso-aleatorio">
 <h2>1. Memoria Principal (RAM - Memoria de Acceso Aleatorio)<a class="headerlink" href="#memoria-principal-ram-memoria-de-acceso-aleatorio" title="Permalink to this heading"></a></h2>
+<p>Es un tipo de memoria de lectura y escritura. Tanto la memoria RAM como la ROM son consideradas <em>la memoria principal del sistema</em>, ya que sin ellas no es posible inicializar el resto de componentes del equipo, como el sistema operativo o ciertos controladores esenciales.</p>
 <ul class="simple">
 <li><p><strong>DRAM (Dynamic RAM)</strong>: Volátil; necesita refrescarse constantemente.</p></li>
 <li><p><strong>SRAM (Static RAM)</strong>: Más rápida que la DRAM y no necesita refresco, pero más cara.</p></li>
@@ -153,6 +160,7 @@
 </section>
 <section id="memoria-cache">
 <h2>2. Memoria Caché<a class="headerlink" href="#memoria-cache" title="Permalink to this heading"></a></h2>
+<p>Son memorias intermedias que suelen ser insertadas entre el procesador y la memoria principal, con la finalidad de procurar accesos más rápidos a memoria desde el procesador; datos de uso frecuente del procesador.</p>
 <ul class="simple">
 <li><p>Integrada en el procesador (niveles L1, L2, L3).</p></li>
 <li><p>Muy rápida y pequeña; almacena datos de uso frecuente.</p></li>
@@ -160,6 +168,7 @@
 </section>
 <section id="memoria-rom-read-only-memory">
 <h2>3. Memoria ROM (Read-Only Memory)<a class="headerlink" href="#memoria-rom-read-only-memory" title="Permalink to this heading"></a></h2>
+<p>Es una memoria de <em>sólo lectura</em>. Algunos componentes del equipo, utilizan esta memoria, para guardar el código necesario, como los controladores que inicializan distintos dispositivos o el <em>chipset</em> de la placa.</p>
 <ul class="simple">
 <li><p>No volátil; contiene datos permanentes o semipermanentes.</p></li>
 <li><p>Tipos: <strong>PROM, EPROM, EEPROM</strong>.</p></li>

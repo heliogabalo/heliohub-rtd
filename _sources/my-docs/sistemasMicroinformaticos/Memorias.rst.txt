@@ -6,6 +6,8 @@ En los equipos de cómputo se utilizan diversos tipos de memoria, cada una con f
 1. Memoria Principal (RAM - Memoria de Acceso Aleatorio)
 -----------------------------------------------------------
 
+Es un tipo de memoria de lectura y escritura. Tanto la memoria RAM como la ROM son consideradas *la memoria principal del sistema*, ya que sin ellas no es posible inicializar el resto de componentes del equipo, como el sistema operativo o ciertos controladores esenciales.
+
 - **DRAM (Dynamic RAM)**: Volátil; necesita refrescarse constantemente.
 - **SRAM (Static RAM)**: Más rápida que la DRAM y no necesita refresco, pero más cara.
 - **DDR (Double Data Rate)**: Versiones DDR, DDR2, DDR3, DDR4, DDR5, con mejoras en velocidad y eficiencia.
@@ -13,6 +15,7 @@ En los equipos de cómputo se utilizan diversos tipos de memoria, cada una con f
 
 2. Memoria Caché
 -------------------
+Son memorias intermedias que suelen ser insertadas entre el procesador y la memoria principal, con la finalidad de procurar accesos más rápidos a memoria desde el procesador; datos de uso frecuente del procesador.
 
 - Integrada en el procesador (niveles L1, L2, L3).
 - Muy rápida y pequeña; almacena datos de uso frecuente.
@@ -20,6 +23,7 @@ En los equipos de cómputo se utilizan diversos tipos de memoria, cada una con f
 
 3. Memoria ROM (Read-Only Memory)
 -----------------------------------
+Es una memoria de *sólo lectura*. Algunos componentes del equipo, utilizan esta memoria, para guardar el código necesario, como los controladores que inicializan distintos dispositivos o el *chipset* de la placa.
 
 - No volátil; contiene datos permanentes o semipermanentes.
 - Tipos: **PROM, EPROM, EEPROM**.
