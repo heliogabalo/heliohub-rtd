@@ -2,7 +2,7 @@ La arquitectura Von Neumann
 ==============================
 
 La arquitectura Von Neumann es también conocida como modelo de Von Neumann o arquitectura Princeton.
-Es un modelo de diseño para computadoras propuesto por **John von Neumann** en 1945. Es la base de la mayoría de las computadoras modernas.
+Es un modelo de diseño para computadoras propuesto por **John Von Neumann** en 1945. Es la base de la mayoría de las computadoras modernas.
 
 Características principales:
 ------------------------------
@@ -71,7 +71,7 @@ Soluciones Modernas
 2. **Arquitectura Harvard Modificada**
 
    - Buses separados para datos e instrucciones **solo en caché** (L1).
-   - En RAM sigue siendo Von Neumann.
+   - En RAM sigue siendo *la arquitectura de Von Neumann*.
 
 3. **Prefetching**
 
@@ -105,7 +105,7 @@ Esquema de un Procesador Moderno
     | |+---------+|    |+---------+|    |+---------+|   |
     | +-----^-----+    +-----^-----+    +-----^-----+   |
     |       |                |                |         |
-    | +-----v-------------------------------v-----+     |
+    | +-----v---------------------------------v---+     |
     | |             Caché L3 compartida           |     |
     | +----------------------^--------------------+     |
     | |                      |                          |
@@ -128,7 +128,7 @@ Esquema de un Procesador Moderno
                        +----------------+
 
 Componentes Clave
------------------
+-------------------
 - **Núcleos (Cores)**
   - Cada uno con ALU, registros y caché L1 (Harvard modificado).
 - **Caché L2**

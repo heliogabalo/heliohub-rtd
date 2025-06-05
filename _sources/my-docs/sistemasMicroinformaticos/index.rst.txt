@@ -54,6 +54,18 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 	Instalación configuración de redes. También podrá inncluir ejercicios propuestos.
 	
 	
+.. toctree::
+   :maxdepth: 1
+   :caption: Office:
+
+   Office/Word-apuntes.rst
+   
+   
+.. tip::
+   
+	**Word**: documentación sobre la herramienta *Word* de *Office*.
+	
+	
 	
 Downloadable files
 =====================

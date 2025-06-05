@@ -15,6 +15,7 @@ Periféricos clasificados por tipo
 Lista de los periféricos en equipo de usuario
 ------------------------------------------------
 
+
 +---------------------+---------------------------------+
 |      Dispositivo    |              Tipo               |
 +=====================+=================================+
@@ -24,12 +25,11 @@ Lista de los periféricos en equipo de usuario
 +---------------------+---------------------------------+
 |         Ratón       |     dispositivo de entrada      |
 +---------------------+---------------------------------+
-|       Impresora     |     dispositivo de E/S          |
-+---------------------+---------------------------------+
-|       Altavozes     |     dispositivo de salida       |
-+---------------------+---------------------------------+
 |       Pendrive      |  dispositivo de almacenamiento  |
++---------------------+---------------------------------+
+|   Disco Duro- SSD   |  dispositivo de Alm. externo    |
 +---------------------+---------------------------------+
 |    Tarjeta de Red   |  dispositivo de comunicación    |
 +---------------------+---------------------------------+
+
 

@@ -89,17 +89,16 @@
 <li class="toctree-l3"><a class="reference internal" href="VonNeumann.html">John von Neumann</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tipos y características de memoria</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#memoria-principal-ram-memoria-de-acceso-aleatorio">1. Memoria Principal (RAM - Memoria de Acceso Aleatorio)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#memoria-cache">2. Memoria Caché</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#memoria-rom-read-only-memory">3. Memoria ROM (Read-Only Memory)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#memoria-virtual">4. Memoria Virtual</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#memoria-flash">5. Memoria Flash</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#memoria-de-almacenamiento-secundario">6. Memoria de Almacenamiento Secundario</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id1">7. Memoria Caché</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#modulos-de-memoria-gddr">8. Módulos de Memoria GDDR</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#modulos-de-memoria-so-dimm">9. Módulos de Memoria SO-DIMM</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ancho-de-banda-y-velocidad-de-reloj">10. Ancho de Banda y Velocidad de Reloj</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#que-es-mas-importante">11. ¿Qué es Más Importante?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#memoria-instalada-en-el-equipo">12. Memoria instalada en el equipo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#memoria-rom-read-only-memory">2. Memoria ROM (Read-Only Memory)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#memoria-virtual">3. Memoria Virtual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#memoria-flash">4. Memoria Flash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#memoria-de-almacenamiento-secundario">5. Memoria de Almacenamiento Secundario</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#memoria-cache">6. Memoria Caché</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos-de-memoria-gddr">7. Módulos de Memoria GDDR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos-de-memoria-so-dimm">8. Módulos de Memoria SO-DIMM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ancho-de-banda-y-velocidad-de-reloj">9. Ancho de Banda y Velocidad de Reloj</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#que-es-mas-importante">10. ¿Qué es Más Importante?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#memoria-instalada-en-el-equipo">11. Memoria instalada en el equipo</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="perifericos.html">Periféricos clasificados por tipo</a></li>
@@ -112,6 +111,7 @@
 <li class="toctree-l3"><a class="reference internal" href="OS/caracteristicasEquipo.html">Caracteristicas del equipo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OS/particionadorDeWindows.html">DISKPART - particionado</a></li>
 <li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Office/Word-apuntes.html">Formato fuente</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#downloadable-files">Downloadable files</a></li>
@@ -158,16 +158,8 @@
 <li><p><strong>DDR (Double Data Rate)</strong>: Versiones DDR, DDR2, DDR3, DDR4, DDR5, con mejoras en velocidad y eficiencia.</p></li>
 </ul>
 </section>
-<section id="memoria-cache">
-<h2>2. Memoria Caché<a class="headerlink" href="#memoria-cache" title="Permalink to this heading"></a></h2>
-<p>Son memorias intermedias que suelen ser insertadas entre el procesador y la memoria principal, con la finalidad de procurar accesos más rápidos a memoria desde el procesador; datos de uso frecuente del procesador.</p>
-<ul class="simple">
-<li><p>Integrada en el procesador (niveles L1, L2, L3).</p></li>
-<li><p>Muy rápida y pequeña; almacena datos de uso frecuente.</p></li>
-</ul>
-</section>
 <section id="memoria-rom-read-only-memory">
-<h2>3. Memoria ROM (Read-Only Memory)<a class="headerlink" href="#memoria-rom-read-only-memory" title="Permalink to this heading"></a></h2>
+<h2>2. Memoria ROM (Read-Only Memory)<a class="headerlink" href="#memoria-rom-read-only-memory" title="Permalink to this heading"></a></h2>
 <p>Es una memoria de <em>sólo lectura</em>. Algunos componentes del equipo, utilizan esta memoria, para guardar el código necesario, como los controladores que inicializan distintos dispositivos o el <em>chipset</em> de la placa.</p>
 <ul class="simple">
 <li><p>No volátil; contiene datos permanentes o semipermanentes.</p></li>
@@ -176,41 +168,45 @@
 </ul>
 </section>
 <section id="memoria-virtual">
-<h2>4. Memoria Virtual<a class="headerlink" href="#memoria-virtual" title="Permalink to this heading"></a></h2>
+<h2>3. Memoria Virtual<a class="headerlink" href="#memoria-virtual" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>Espacio del disco duro que el sistema usa como si fuera RAM.</p></li>
 <li><p>Más lenta, pero útil cuando la RAM física se llena.</p></li>
 </ul>
 </section>
 <section id="memoria-flash">
-<h2>5. Memoria Flash<a class="headerlink" href="#memoria-flash" title="Permalink to this heading"></a></h2>
+<h2>4. Memoria Flash<a class="headerlink" href="#memoria-flash" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>No volátil; utilizada en SSDs, USBs, tarjetas SD.</p></li>
 <li><p>Rápida, resistente y sin partes móviles.</p></li>
 </ul>
 </section>
 <section id="memoria-de-almacenamiento-secundario">
-<h2>6. Memoria de Almacenamiento Secundario<a class="headerlink" href="#memoria-de-almacenamiento-secundario" title="Permalink to this heading"></a></h2>
+<h2>5. Memoria de Almacenamiento Secundario<a class="headerlink" href="#memoria-de-almacenamiento-secundario" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><strong>HDD (Disco Duro)</strong>: Más lento, pero con gran capacidad.</p></li>
-<li><p><strong>SSD (Unidad de Estado Sólido)</strong>: Más rápido que el HDD; utiliza memoria flash.</p></li>
+<li><p><strong>SSD (Solid State Disk)</strong>: Unidad de Estado Sólido, más rápido que el HDD; utiliza memoria flash.</p></li>
 <li><p><strong>CD/DVD/Blu-Ray</strong>: Medios ópticos, en desuso para la mayoría de los casos.</p></li>
 </ul>
 </section>
-<section id="id1">
-<h2>7. Memoria Caché<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<section id="memoria-cache">
+<h2>6. Memoria Caché<a class="headerlink" href="#memoria-cache" title="Permalink to this heading"></a></h2>
 <p>Las memorias caché son memorias intermedias ubicadas entre el procesador y la memoria principal (o entre el disco duro y el sistema), diseñadas para almacenar información de uso frecuente. En el caso del procesador, contienen datos e instrucciones accedidos recientemente. En discos duros, la caché mejora el rendimiento de lectura/escritura, almacenando bloques de datos usados por aplicaciones o por el sistema operativo (que además puede gestionar su propia caché a nivel de software).</p>
 <p>En los procesadores, las cachés se organizan en niveles jerárquicos (L1, L2, L3…), donde L1 (la más rápida) suele estar integrada en cada núcleo, L2 es compartida por unos pocos núcleos, y L3 (cuando existe) es común para todo el chip. En cambio, en los discos duros, la caché suele ser un búfer de hardware gestionado por el controlador del disco.</p>
 <p>Además de las mencionadas, existen otros tipos de memoria caché utilizados en distintos componentes hardware y sistemas, cada uno optimizado para reducir latencias y mejorar el rendimiento en sus respectivos contextos.</p>
+<ul class="simple">
+<li><p>Integrada en el procesador (niveles L1, L2, L3).</p></li>
+<li><p>Muy rápida y pequeña; almacena datos de uso frecuente.</p></li>
+</ul>
 </section>
 <section id="modulos-de-memoria-gddr">
-<h2>8. Módulos de Memoria GDDR<a class="headerlink" href="#modulos-de-memoria-gddr" title="Permalink to this heading"></a></h2>
-<p><strong>modulos GDDR</strong>: Son múdulos específicos para tarjetas de vídeo que contienen memoria GDDR-SDRAM.</p>
+<h2>7. Módulos de Memoria GDDR<a class="headerlink" href="#modulos-de-memoria-gddr" title="Permalink to this heading"></a></h2>
+<p><strong>Modulos GDDR</strong>: Son módulos específicos para tarjetas de vídeo que contienen memoria <em>GDDR-SDRAM</em>.</p>
 <ul class="simple">
 <li><p>GDDR (Graphics Double Data Rate)</p></li>
 <li><p>SDRAM (Synchronous Dynamic Random-Acces Memory)</p></li>
 </ul>
-<p>La memoria GDDR (Graphics Double Data Rate) es un tipo de memoria RAM especializada utilizada en tarjetas gráficas y sistemas de procesamiento de gráficos. Está optimizada para ofrecer <strong>altos anchos de banda</strong> y <strong>baja latencia</strong>, esenciales en aplicaciones como videojuegos, diseño gráfico, simulaciones y aprendizaje automático.</p>
+<p>La memoria GDDR, es un tipo de memoria RAM especializada utilizada en tarjetas gráficas y sistemas de procesamiento de gráficos. Está optimizada para ofrecer <strong>altos anchos de banda</strong> y <strong>baja latencia</strong>, esenciales en aplicaciones como videojuegos, diseño gráfico, simulaciones y aprendizaje automático.</p>
 <section id="caracteristicas-generales">
 <h3>Características Generales<a class="headerlink" href="#caracteristicas-generales" title="Permalink to this heading"></a></h3>
 <ul class="simple">
@@ -265,27 +261,25 @@
 <section id="aplicaciones-comunes">
 <h3>Aplicaciones Comunes<a class="headerlink" href="#aplicaciones-comunes" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>Tarjetas gráficas (NVIDIA, AMD)</p></li>
-<li><p>Consolas de videojuegos (PS4, PS5, Xbox Series X/S)</p></li>
-<li><p>Workstations profesionales para edición de video, CAD y renderizado 3D</p></li>
-<li><p>Algunos aceleradores de inteligencia artificial</p></li>
+<li><p>Tarjetas gráficas (NVIDIA, AMD).</p></li>
+<li><p>Consolas de videojuegos (PS4, PS5, Xbox Series X/S).</p></li>
+<li><p>Workstations profesionales, para edición de video CAD y renderizado 3D.</p></li>
+<li><p>Algunos aceleradores de inteligencia artificial.</p></li>
 </ul>
 </section>
 </section>
 <section id="modulos-de-memoria-so-dimm">
-<h2>9. Módulos de Memoria SO-DIMM<a class="headerlink" href="#modulos-de-memoria-so-dimm" title="Permalink to this heading"></a></h2>
+<h2>8. Módulos de Memoria SO-DIMM<a class="headerlink" href="#modulos-de-memoria-so-dimm" title="Permalink to this heading"></a></h2>
 <p><strong>modulos SO-DIMM</strong>: Módulos específicos para portátiles. Se trata de una versión reducida de los módulos de memoria con contactos duales(factor de forma DIMM).</p>
 <ul class="simple">
-<li><p>En cuanto a características y prestaciones, son similares a las de un equipo convencional</p></li>
+<li><p>En cuanto a características y prestaciones, son similares a las de un equipo convencional.</p></li>
 </ul>
 </section>
 <section id="ancho-de-banda-y-velocidad-de-reloj">
-<h2>10. Ancho de Banda y Velocidad de Reloj<a class="headerlink" href="#ancho-de-banda-y-velocidad-de-reloj" title="Permalink to this heading"></a></h2>
+<h2>9. Ancho de Banda y Velocidad de Reloj<a class="headerlink" href="#ancho-de-banda-y-velocidad-de-reloj" title="Permalink to this heading"></a></h2>
 <p>La <strong>memoria RAM (Random Access Memory)</strong> es un componente clave en sistemas informáticos, ya que determina la velocidad de acceso a datos temporales. Dos factores críticos que afectan su rendimiento son:</p>
-<p>10.1 <strong>Velocidad de Reloj (Frecuencia)</strong>
-10.2 <strong>Ancho de Banda</strong></p>
 <section id="velocidad-de-reloj-frecuencia">
-<h3>10.1 Velocidad de Reloj (Frecuencia)<a class="headerlink" href="#velocidad-de-reloj-frecuencia" title="Permalink to this heading"></a></h3>
+<h3>9.1 <strong>Velocidad de Reloj (Frecuencia)</strong><a class="headerlink" href="#velocidad-de-reloj-frecuencia" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Definición</strong>: Indica los ciclos de operación por segundo, medidos en <strong>MHz</strong> o <strong>GHz</strong>.</p></li>
 <li><p><strong>Ejemplo</strong>: DDR4-3200 opera a <strong>3200 MHz</strong> (3.2 mil millones de ciclos/segundo).</p></li>
@@ -304,13 +298,16 @@
 </div></blockquote>
 </section>
 <section id="ancho-de-banda">
-<h3>10.2 Ancho de Banda<a class="headerlink" href="#ancho-de-banda" title="Permalink to this heading"></a></h3>
+<h3>9.2 <strong>Ancho de Banda</strong><a class="headerlink" href="#ancho-de-banda" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Definición</strong>: Cantidad de datos transferidos por segundo (GB/s).</p></li>
-<li><p><strong>Factores que lo determinan</strong>:
-- Velocidad de reloj (MHz).
-- Ancho del bus de datos (normalmente <strong>64 bits</strong> en Single Channel).
-- Número de canales (Dual/Quad Channel multiplica el ancho efectivo).</p></li>
+<li><p><strong>Factores que lo determinan</strong>:</p>
+<ul>
+<li><p>Velocidad de reloj (MHz).</p></li>
+<li><p>Ancho del bus de datos (normalmente <strong>64 bits</strong> en Single Channel).</p></li>
+<li><p>Número de canales (Dual/Quad Channel multiplica el ancho efectivo).</p></li>
+</ul>
+</li>
 </ul>
 <p><strong>Cálculo del Ancho de Banda</strong>:
 Fórmula para módulos DDR (Double Data Rate):</p>
@@ -353,24 +350,26 @@ Fórmula para módulos DDR (Double Data Rate):</p>
 </section>
 </section>
 <section id="que-es-mas-importante">
-<h2>11. ¿Qué es Más Importante?<a class="headerlink" href="#que-es-mas-importante" title="Permalink to this heading"></a></h2>
+<h2>10. ¿Qué es Más Importante?<a class="headerlink" href="#que-es-mas-importante" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><strong>Uso general (ofimática/navegación)</strong>: Velocidad y ancho de banda no son críticos.</p></li>
 <li><p><strong>Gaming/Edición de video</strong>: Alta velocidad (≥3200 MHz) + bajo CL para mejor rendimiento.</p></li>
 <li><p><strong>Servidores/Workstations</strong>: Ancho de banda alto (Dual/Quad Channel + DDR5).</p></li>
 </ul>
-<p><strong>Conclusión</strong>:
-- <strong>Velocidad de reloj</strong>: Define la rapidez interna de la RAM.
-- <strong>Ancho de banda</strong>: Determina el volumen de datos transferibles al CPU.
-- <strong>Optimización ideal</strong>: Equilibrar <strong>alta frecuencia + baja latencia + múltiples canales</strong>.</p>
+<p><strong>Conclusión</strong>:</p>
+<ul class="simple">
+<li><p><strong>Velocidad de reloj</strong>: Define la rapidez interna de la RAM.</p></li>
+<li><p><strong>Ancho de banda</strong>: Determina el volumen de datos transferibles al CPU.</p></li>
+<li><p><strong>Optimización ideal</strong>: Equilibrar <strong>alta frecuencia + baja latencia + múltiples canales</strong>.</p></li>
+</ul>
 </section>
 <section id="memoria-instalada-en-el-equipo">
-<h2>12. Memoria instalada en el equipo<a class="headerlink" href="#memoria-instalada-en-el-equipo" title="Permalink to this heading"></a></h2>
+<h2>11. Memoria instalada en el equipo<a class="headerlink" href="#memoria-instalada-en-el-equipo" title="Permalink to this heading"></a></h2>
 <p><strong>En Windows</strong>, podemos consultar este dato mediante el siguiente comando en <em>PowerShell</em>:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Get-CimInstance</span> <span class="pre">Win32_PhysicalMemory</span> <span class="pre">|</span> <span class="pre">Format-Table</span> <span class="pre">Manufacturer,</span> <span class="pre">Speed,</span> <span class="pre">MemoryType,</span> <span class="pre">Capacity</span></code></p></li>
 </ul>
-<p>También es posible hacer la consulta en el administrador de tareas, en el apartado memoria. Sin embargo el dato -tipo de memoria, no siempre aparece explícitamente, aunque si nos fijamos en la <strong>velocidad</strong> y la relacionamos con la <strong>capacidad</strong> del módulo y el <strong>factor de forma</strong>, de la memoria instalada en el sistema; por ejemplo:</p>
+<p>También es posible hacer la consulta en el administrador de tareas, en el apartado memoria. Sin embargo el dato -tipo de memoria, no siempre aparece explícitamente, aunque si nos fijamos en la <strong>velocidad</strong> y la relacionamos con la <strong>capacidad</strong> del módulo y el <strong>factor de forma</strong> de la memoria instalada en el sistema; por ejemplo:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">8GB</span> <span class="pre">a</span> <span class="pre">2666</span> <span class="pre">factor</span> <span class="pre">de</span> <span class="pre">forma</span> <span class="pre">DIMM</span></code></p></li>
 </ul>
@@ -386,8 +385,8 @@ fabricante, en este caso:</p>
 <span class="n">PS</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Bits</span><span class="o">-</span><span class="mi">2</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p><strong>En linux</strong>, también podemos comprobar qué memoria tenemos instalada en el sistema, por supuesto. El primer de los siguiente comandos nos permite consultar los datos mediante la aplicación dmidecode y filtrarla después con grep, con aquellos criterios que consideremos relevantes. Veremos que el resultado es una lista de líneas de información, agrupadas por el criterio de búsqueda. Ha sido añadido el paginador less, para facilitar su lectura sobre la cónsola.</p>
-<p>En la segunda línea de comando, ha sido omitido el filtro grep, y en cambio la llamada a la aplicación aparece con el parámetro –type memory. Jugando un poco con los datos y el filtro, obtendremos más o menos información; las posibles combinaciones son númerosas:</p>
+<p><strong>En linux</strong>, también podemos comprobar qué memoria tenemos instalada en el sistema, por supuesto. El primer de los siguiente comandos nos permite consultar los datos mediante la aplicación <code class="docutils literal notranslate"><span class="pre">dmidecode</span></code> y filtrarla después con <code class="docutils literal notranslate"><span class="pre">grep</span></code>, con aquellos criterios que consideremos relevantes. Veremos que el resultado es una lista de líneas de información, agrupadas por el criterio de búsqueda. Ha sido añadido el paginador <code class="docutils literal notranslate"><span class="pre">less</span></code>, para facilitar su lectura sobre la cónsola.</p>
+<p>En la segunda línea de comando, ha sido omitido el filtro grep, y en cambio la llamada a la aplicación aparece con el parámetro <code class="docutils literal notranslate"><span class="pre">--type</span> <span class="pre">memory</span></code>. Jugando un poco con los datos y el filtro, obtendremos más o menos información; las posibles combinaciones son númerosas:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dmidecode</span> <span class="o">-</span><span class="n">t</span> <span class="n">memory</span> <span class="o">|</span><span class="n">grep</span> <span class="o">-</span><span class="n">i</span> <span class="s2">&quot;speed\|size\|manufacturer\|part number\|serial number&quot;</span> <span class="o">|</span> <span class="n">less</span>
 
 <span class="n">dmidecode</span> <span class="o">--</span><span class="nb">type</span> <span class="n">memory</span><span class="o">|</span><span class="n">less</span> <span class="o">-</span><span class="n">S</span>

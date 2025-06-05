@@ -98,8 +98,15 @@
 <li class="toctree-l3"><a class="reference internal" href="Memorias.html">Tipos y características de memoria</a></li>
 <li class="toctree-l3"><a class="reference internal" href="perifericos.html">Periféricos clasificados por tipo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="integratedCards.html">Verificar si la placa base integra tarjeta gráfica (GPU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Buses.html">Buses del equipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="anchoBusGPU.html">Interpretación del “Ancho del Bus” en Tarjetas Gráficas (GPU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conectoresDelEquipo.html">Conectores externos del equipo.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UEFI.html">¿Qué es el estándar UEFI?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UEFI-refs.html">Referenciando funciones en UEFI mediante identificadores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OS/caracteristicasEquipo.html">Caracteristicas del equipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OS/particionadorDeWindows.html">DISKPART - particionado</a></li>
 <li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Office/Word-apuntes.html">Formato fuente</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#downloadable-files">Downloadable files</a></li>
@@ -137,7 +144,7 @@
   <section id="la-arquitectura-von-neumann">
 <h1>La arquitectura Von Neumann<a class="headerlink" href="#la-arquitectura-von-neumann" title="Permalink to this heading"></a></h1>
 <p>La arquitectura Von Neumann es también conocida como modelo de Von Neumann o arquitectura Princeton.
-Es un modelo de diseño para computadoras propuesto por <strong>John von Neumann</strong> en 1945. Es la base de la mayoría de las computadoras modernas.</p>
+Es un modelo de diseño para computadoras propuesto por <strong>John Von Neumann</strong> en 1945. Es la base de la mayoría de las computadoras modernas.</p>
 <section id="caracteristicas-principales">
 <h2>Características principales:<a class="headerlink" href="#caracteristicas-principales" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
@@ -211,7 +218,7 @@ Es un modelo de diseño para computadoras propuesto por <strong>John von Neumann
 <li><p><strong>Arquitectura Harvard Modificada</strong></p>
 <ul class="simple">
 <li><p>Buses separados para datos e instrucciones <strong>solo en caché</strong> (L1).</p></li>
-<li><p>En RAM sigue siendo Von Neumann.</p></li>
+<li><p>En RAM sigue siendo <em>la arquitectura de Von Neumann</em>.</p></li>
 </ul>
 </li>
 <li><p><strong>Prefetching</strong></p>
@@ -249,7 +256,7 @@ Es un modelo de diseño para computadoras propuesto por <strong>John von Neumann
 <span class="o">|</span> <span class="o">|+---------+|</span>    <span class="o">|+---------+|</span>    <span class="o">|+---------+|</span>   <span class="o">|</span>
 <span class="o">|</span> <span class="o">+-----^-----+</span>    <span class="o">+-----^-----+</span>    <span class="o">+-----^-----+</span>   <span class="o">|</span>
 <span class="o">|</span>       <span class="o">|</span>                <span class="o">|</span>                <span class="o">|</span>         <span class="o">|</span>
-<span class="o">|</span> <span class="o">+-----</span><span class="n">v</span><span class="o">-------------------------------</span><span class="n">v</span><span class="o">-----+</span>     <span class="o">|</span>
+<span class="o">|</span> <span class="o">+-----</span><span class="n">v</span><span class="o">---------------------------------</span><span class="n">v</span><span class="o">---+</span>     <span class="o">|</span>
 <span class="o">|</span> <span class="o">|</span>             <span class="n">Caché</span> <span class="n">L3</span> <span class="n">compartida</span>           <span class="o">|</span>     <span class="o">|</span>
 <span class="o">|</span> <span class="o">+----------------------^--------------------+</span>     <span class="o">|</span>
 <span class="o">|</span> <span class="o">|</span>                      <span class="o">|</span>                          <span class="o">|</span>
