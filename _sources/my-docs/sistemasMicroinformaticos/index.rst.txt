@@ -8,20 +8,20 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 
 .. toctree::
    :maxdepth: 1
-   :caption: Historia:
+   :caption: Sistema, arquitectura, componentes:
 
-   evolucionProcesadores.rst
-   GeorgeBoole.rst
-   arquitecturaVonNeuman.rst
-   VonNeumann.rst
-   Memorias.rst
-   perifericos.rst
-   integratedCards.rst
-   Buses.rst
-   anchoBusGPU.rst
-   conectoresDelEquipo.rst
-   UEFI.rst
-   UEFI-refs.rst
+   Sistema/evolucionProcesadores.rst
+   Sistema/GeorgeBoole.rst
+   Sistema/arquitecturaVonNeuman.rst
+   Sistema/VonNeumann.rst
+   Sistema/Memorias.rst
+   Sistema/perifericos.rst
+   Sistema/integratedCards.rst
+   Sistema/Buses.rst
+   Sistema/anchoBusGPU.rst
+   Sistema/conectoresDelEquipo.rst
+   Sistema/UEFI.rst
+   Sistema/UEFI-refs.rst
 
 
 .. note::
@@ -34,6 +34,9 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 
    OS/caracteristicasEquipo.rst
    OS/particionadorDeWindows.rst
+   OS/SO_portatil.rst
+   OS/EFIpartWindows.rst
+   OS/tipoArranquePS.rst
    
 
 .. tip::
@@ -41,30 +44,29 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 	Documentos disponibles sobre la instalación del sistema operativo. También podrá inncluir ejercicios propuestos.
 
 
-
 .. toctree::
    :maxdepth: 1
    :caption: Redes:
 
-   evolucionProcesadores.rst
+   Sistema/evolucionProcesadores.rst
    
    
-.. tip::
+.. note::
    
 	Instalación configuración de redes. También podrá inncluir ejercicios propuestos.
 	
 	
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Office:
 
-   Office/Word-apuntes.rst
+   Office/Word-apuntes-parte1.rst
+   Office/Word-apuntes-parte2.rst
    
    
 .. tip::
    
 	**Word**: documentación sobre la herramienta *Word* de *Office*.
-	
 	
 	
 Downloadable files

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>diskpark - particionado &mdash; Linux Test Project 1.0 documentation</title>
+  <title>Windows hardening, EFI &mdash; Linux Test Project 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
@@ -24,8 +24,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Creación de medios de instalación" href="SO_portatil.html" />
-    <link rel="prev" title="Caracteristicas del equipo" href="caracteristicasEquipo.html" /> 
+    <link rel="next" title="Información del Sistema relacionada con UEFI usando PowerShell" href="tipoArranquePS.html" />
+    <link rel="prev" title="Creación de medios de instalación" href="SO_portatil.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -95,15 +95,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/UEFI.html">¿Qué es el estándar UEFI?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/UEFI-refs.html">Referenciando funciones en UEFI mediante identificadores</a></li>
 <li class="toctree-l3"><a class="reference internal" href="caracteristicasEquipo.html">Caracteristicas del equipo</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">diskpark</span></code> - particionado</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#crear-particiones">Crear particiones</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#permisos-de-ntfs">Permisos de NTFS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="particionadorDeWindows.html">DISKPART - particionado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SO_portatil.html">Creación de medios de instalación</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Windows hardening, EFI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pasos">Pasos:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="SO_portatil.html">Creación de medios de instalación</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EFIpartWindows.html">Windows hardening, EFI</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tipoArranquePS.html">Información del Sistema relacionada con UEFI usando PowerShell</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Sistema/evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Office/Word-apuntes.html">Formato fuente</a></li>
 </ul>
 </li>
@@ -129,9 +127,9 @@
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Topic Index</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Sistemas Microinformaticos</a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">diskpark</span></code> - particionado</li>
+      <li class="breadcrumb-item active">Windows hardening, EFI</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/my-docs/sistemasMicroinformaticos/OS/particionadorDeWindows.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/my-docs/sistemasMicroinformaticos/OS/EFIpartWindows.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -139,65 +137,98 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="diskpark-particionado">
-<h1><code class="docutils literal notranslate"><span class="pre">diskpark</span></code> - particionado<a class="headerlink" href="#diskpark-particionado" title="Permalink to this heading"></a></h1>
-<p>Para comprobar el tipo de partición de un disco:</p>
-<ul>
-<li><p>Pulsamos tecla <kbd class="kbd docutils literal notranslate">Win</kbd> y escribimos: <code class="docutils literal notranslate"><span class="pre">símbolo</span> <span class="pre">de</span> <span class="pre">sistema</span></code> o</p></li>
-<li><p>Abrimos el símbolo de sistema con <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Win</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">R</kbd></kbd> y escribir <code class="docutils literal notranslate"><span class="pre">cmd</span></code>; a continuación escribimos los siguiente comandos:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">diskpark</span>
-<span class="mf">2.</span> <span class="nb">list</span> <span class="n">disk</span>
-<span class="mf">3.</span> <span class="n">select</span> <span class="n">disk</span> <span class="mi">1</span>
-<span class="mf">4.</span> <span class="nb">list</span> <span class="n">partition</span>
-<span class="mf">5.</span> <span class="n">clean</span>
-<span class="mf">6.</span> <span class="nb">list</span> <span class="n">partition</span>
-<span class="mf">7.</span> <span class="n">exit</span>
+  <section id="windows-hardening-efi">
+<h1>Windows hardening, EFI<a class="headerlink" href="#windows-hardening-efi" title="Permalink to this heading"></a></h1>
+<p>Para montar una partición del Sistema EFI (ESP) y asignarle una letra para su inspección, generalmente no se recomienda hacerlo directamente desde el Administrador de Discos de Windows de forma gráfica, ya que es una partición protegida. Sin embargo, puedes lograrlo usando la línea de comandos con <cite>diskpart</cite>.</p>
+<p>Cómo montar una partición de sistema EFI (ESP) y asignarle una letra</p>
+<p>Para inspeccionar el contenido de una partición de sistema EFI (ESP), necesitas asignarle una letra de unidad. Esto se hace de forma segura utilizando la herramienta de línea de comandos <cite>diskpart</cite>.</p>
+<blockquote>
+<div><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Manipular particiones del sistema puede ser peligroso si no se
+realiza correctamente. Asegúrate de seguir los pasos cuidadosamente.</p>
+</div>
+</div></blockquote>
+<section id="pasos">
+<h2>Pasos:<a class="headerlink" href="#pasos" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Abrir el Símbolo del sistema como administrador</strong>:</p>
+<ul class="simple">
+<li><p>Presiona <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Win</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">R</kbd></kbd> para abrir el cuadro de diálogo “Ejecutar”.</p></li>
+<li><p>Escribe <code class="docutils literal notranslate"><span class="pre">cmd</span></code> y presiona <kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <kbd class="kbd docutils literal notranslate">Shift</kbd> + <kbd class="kbd docutils literal notranslate">Enter</kbd> para abrir el Símbolo del sistema con privilegios de administrador.</p></li>
+<li><p>Confirma el aviso de Control de cuentas de usuario (UAC) si aparece.</p></li>
+</ul>
+</li>
+<li><p><strong>Iniciar Diskpart</strong>:</p>
+<ul class="simple">
+<li><p>En la ventana del Símbolo del sistema, escribe <code class="docutils literal notranslate"><span class="pre">diskpart</span></code> y presiona <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
+</ul>
+</li>
+<li><p><strong>Listar discos</strong>:</p>
+<ul class="simple">
+<li><p>Una vez dentro de <code class="docutils literal notranslate"><span class="pre">diskpart</span></code>, escribe <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">disk</span></code> y presiona <kbd class="kbd docutils literal notranslate">Enter</kbd>. Esto mostrará todos los discos conectados a tu sistema.</p></li>
+<li><p>Identifica el disco que contiene la partición EFI. Generalmente, es el disco donde está instalado Windows (normalmente <cite>Disco 0</cite>).</p></li>
+</ul>
+</li>
+<li><p><strong>Seleccionar el disco</strong>:</p>
+<ul class="simple">
+<li><p>Escribe <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">disk</span> <span class="pre">X</span></code> (reemplaza <cite>X</cite> con el número del disco identificado en el paso anterior) y presiona <em>Enter</em>. Por ejemplo: <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">disk</span> <span class="pre">0</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Listar particiones del disco seleccionado</strong>:</p>
+<ul class="simple">
+<li><p>Escribe <cite>list partition</cite> y presiona <cite>Enter</cite>. Esto mostrará todas las particiones del disco seleccionado.</p></li>
+<li><p>Busca la partición de “Sistema” (System) que es de tipo “Sistema EFI” o “EFI System Partition”. Su tamaño suele ser pequeño (entre 100 MB y 500 MB).</p></li>
+</ul>
+</li>
+<li><p><strong>Seleccionar la partición EFI</strong>:</p>
+<ul class="simple">
+<li><p>Escribe <cite>select partition Y</cite> (reemplaza <cite>Y</cite> con el número de la partición EFI identificada en el paso anterior) y presiona <cite>Enter</cite>. Por ejemplo: <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">partition</span> <span class="pre">1</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Asignar una letra de unidad</strong>:</p>
+<ul class="simple">
+<li><p>Escribe <code class="docutils literal notranslate"><span class="pre">assign</span> <span class="pre">letter=Z</span></code> (reemplaza <cite>Z</cite> con una letra de unidad disponible que desees asignar, por ejemplo, <cite>S</cite> para “Sistema”) y presiona <cite>Enter</cite>. Por ejemplo: <code class="docutils literal notranslate"><span class="pre">assign</span> <span class="pre">letter=S</span></code>,</p></li>
+<li><p>Si la asignación es exitosa, recibirás un mensaje indicando que Diskpart ha asignado correctamente la letra de unidad o el punto de montaje.</p></li>
+</ul>
+</li>
+<li><p><strong>Salir de Diskpart</strong>:</p>
+<ul class="simple">
+<li><p>Escribe <cite>exit</cite> y presiona <cite>Enter</cite> para salir de <cite>diskpart</cite>.</p></li>
+<li><p>Escribe <cite>exit</cite> de nuevo para cerrar la ventana del Símbolo del sistema.</p></li>
+</ul>
+</li>
+</ol>
+</div></blockquote>
+<p>Ahora la partición EFI estará montada y visible en el Explorador de Archivos de  Windows con la letra de unidad que le asignaste. Puedes navegar a ella para inspeccionar su contenido.</p>
+<blockquote>
+<div><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Después de inspeccionar la partición, se recomienda <strong>quitar la letra de
+unidad</strong> para volver a ocultar la partición y mantener la configuración
+por defecto. Para hacer esto, repite los pasos 1 a 6, y en el paso 7,
+usa el comando <code class="docutils literal notranslate"><span class="pre">remove</span> <span class="pre">letter=Z</span></code> (reemplazando <cite>Z</cite> con la letra que
+asignaste).</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ejemplo de comandos en Símbolo del sistema para montar:</span>
+diskpart
+list<span class="w"> </span>disk
+<span class="k">select</span><span class="w"> </span>disk<span class="w"> </span><span class="m">0</span>
+list<span class="w"> </span>partition
+<span class="k">select</span><span class="w"> </span>partition<span class="w"> </span><span class="m">1</span><span class="w">  </span>rem<span class="w"> </span><span class="o">(</span>asumiendo<span class="w"> </span>que<span class="w"> </span>la<span class="w"> </span>EFI<span class="w"> </span>es<span class="w"> </span>la<span class="w"> </span>partición<span class="w"> </span><span class="m">1</span><span class="o">)</span>
+assign<span class="w"> </span><span class="nv">letter</span><span class="o">=</span>S
+<span class="nb">exit</span>
+
+<span class="c1"># Ejemplo de comandos para quitar la letra después de inspeccionar:</span>
+diskpart
+<span class="k">select</span><span class="w"> </span>disk<span class="w"> </span><span class="m">0</span>
+<span class="k">select</span><span class="w"> </span>partition<span class="w"> </span><span class="m">1</span>
+remove<span class="w"> </span><span class="nv">letter</span><span class="o">=</span>S
+<span class="nb">exit</span>
 </pre></div>
 </div>
-</li>
-<li><ol class="arabic simple">
-<li><p>El comando <code class="docutils literal notranslate"><span class="pre">diskpark</span></code>, abrirá una nueva instancia del <em>símbolo de sistema</em> con la aplicación.</p></li>
-</ol>
-</li>
-<li><ol class="arabic simple" start="2">
-<li><p>A continuación con el comando <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">disk</span></code>, serán listadas todas las particiones que estén definidas en el sistema. Si hay discos de otros sistemas operativos conectados, aparecerán también. Sin embargo el tipo de partición en éste caso, no aparecerá. Esto es así por que el gestor de discos de Windows no reconoce los sistemas de ficheros, ligados a esas <em>particiones externas</em>.</p></li>
-</ol>
-</li>
-<li><ol class="arabic simple" start="3">
-<li><p>Con el comando <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">disk</span> <span class="pre">Nº</span></code>, seleccionamos el disco donde va a crearse la nueva partición.</p></li>
-</ol>
-</li>
-<li><ol class="arabic simple" start="4">
-<li><p>Volvemos a escribir el comando <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">disk</span></code>, y esta vez deberá aparecer un asterisco al principio de la línea, indicando el disco seleccionado. En este paso es importante asegurarse de que el disco seleccionado es el correcto, antes de continuar con el <em>borrado</em> de <strong>todo el disco</strong>.</p></li>
-</ol>
-</li>
-<li><ol class="arabic simple" start="5">
-<li><p>El siguiente comando <code class="docutils literal notranslate"><span class="pre">clean</span></code>; borrará efectivamente todo el contenido deldisco; datos, particiones, tabla de particiones, <strong>todo</strong>.</p></li>
-</ol>
-</li>
-<li><ol class="arabic simple" start="6">
-<li><p>Nuevamente utilizamos el comando <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">disk</span></code>, para asegurarnos de que el disco a sido borrado, y no queda rastro alguno de la partición que contenía.</p></li>
-</ol>
-</li>
-<li><ol class="arabic simple" start="7">
-<li><p>Terminado el proceso, podremos cerrar la aplicación -recordamos que la aplicación se está ejecutando en una segunda instancia del <em>símbolo de sistema</em>; la cerramos con el comando <code class="docutils literal notranslate"><span class="pre">exit</span></code>.</p></li>
-</ol>
-</li>
-</ul>
-<section id="crear-particiones">
-<h2>Crear particiones<a class="headerlink" href="#crear-particiones" title="Permalink to this heading"></a></h2>
-<ul class="simple">
-<li><p><strong>Abrimos el administrador de discos</strong> presionando <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Win</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">R</kbd></kbd>, se abre un cuadro de diálogo; escribimos <code class="docutils literal notranslate"><span class="pre">diskmgmt.msc</span></code>. Otra alternativa;  mantenemos pulsalo  <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">control</kbd> <kbd class="kbd docutils literal notranslate">izquierdo</kbd> <kbd class="kbd docutils literal notranslate">+</kbd></kbd> click en botón derecho del ratón y seleccionamos <em>Administrador de discos</em>.</p></li>
-<li><p><strong>Identifica el USB</strong> Identificamos el disco, en este caso será un <em>USB</em>; el disco a particionar.</p></li>
-<li><p><strong>Crear nueva partición</strong> Click derecho en el espacio no asignado del <em>USB</em> y seleccionamos <em>Nuevo volumen simple</em>.</p></li>
-<li><p><strong>Seguir el asistente</strong> Habrá que especificar el tamaño, la letra de la unidad y el sistema de archivos(<em>NTFS o FAT32</em>).</p></li>
-<li><p><strong>Formatear la partición</strong> una vez creada la partición se deberá formatear, para hacerlo click derecho  en la partición y seleccionar <em>Formatear</em>.</p></li>
-</ul>
-</section>
-<section id="permisos-de-ntfs">
-<h2>Permisos de NTFS<a class="headerlink" href="#permisos-de-ntfs" title="Permalink to this heading"></a></h2>
-<p>Abrimos las propiedades de archivo y seleccionamos la pestaña
-seguridad. Click en el botón editar.</p>
+</div></blockquote>
 </section>
 </section>
 
@@ -205,8 +236,8 @@ seguridad. Click en el botón editar.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="caracteristicasEquipo.html" class="btn btn-neutral float-left" title="Caracteristicas del equipo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="SO_portatil.html" class="btn btn-neutral float-right" title="Creación de medios de instalación" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="SO_portatil.html" class="btn btn-neutral float-left" title="Creación de medios de instalación" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tipoArranquePS.html" class="btn btn-neutral float-right" title="Información del Sistema relacionada con UEFI usando PowerShell" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

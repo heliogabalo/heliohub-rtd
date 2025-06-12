@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verificar si la placa base integra tarjeta gráfica (GPU) &mdash; Linux Test Project 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/js/pathTruncator.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Buses del equipo" href="Buses.html" />
+    <link rel="prev" title="Periféricos clasificados por tipo" href="perifericos.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Linux Test Project
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">For users</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/quick_start.html">Installation and tests execution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/setup_tests.html">Tests setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/supported_systems.html">Supported systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/stats.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/test_catalog.html">Test catalog</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">For developers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/setup_mailinglist.html">Setting up the Mailing list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/writing_tests.html">Writing tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/test_case_tutorial.html">Test case tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_c_tests.html">LTP C API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_shell_tests.html">LTP shell API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_network_tests.html">Developing using network API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_kvm_tests.html">Developing using KVM API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/ltp_library.html">LTP Library guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/build_system.html">Build system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/documentation.html">Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">For maintainers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../maintainers/patch_review.html">Patch review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../maintainers/ltp_release_procedure.html">Release process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Custom Documents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Topic Index</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../testenv_setup/index.html">Testing Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/index.html">Driver Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/index.html">Hardware and System Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sys_config/index.html">System Configuration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Sistemas Microinformaticos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GeorgeBoole.html">Álgebra de Boole en Programación: Contexto Histórico y Aplicaciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="arquitecturaVonNeuman.html">La arquitectura Von Neumann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VonNeumann.html">John von Neumann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Memorias.html">Tipos y características de memoria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="perifericos.html">Periféricos clasificados por tipo</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Verificar si la placa base integra tarjeta gráfica (GPU)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sistemas-windows">Sistemas Windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sistemas-linux">Sistemas Linux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#notas-importantes">Notas importantes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Buses.html">Buses del equipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="anchoBusGPU.html">Interpretación del “Ancho del Bus” en Tarjetas Gráficas (GPU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conectoresDelEquipo.html">Conectores externos del equipo.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UEFI.html">¿Qué es el estándar UEFI?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UEFI-refs.html">Referenciando funciones en UEFI mediante identificadores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/caracteristicasEquipo.html">Caracteristicas del equipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/particionadorDeWindows.html">DISKPART - particionado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/SO_portatil.html">Creación de medios de instalación o sistemas portátiles en Windows (Rufus) y Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/EFIpartWindows.html">Pasos:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Office/Word-apuntes.html">Formato fuente</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#downloadable-files">Downloadable files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Unordered/index.html">Unordered Topics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Linux Test Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Topic Index</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Sistemas Microinformaticos</a></li>
+      <li class="breadcrumb-item active">Verificar si la placa base integra tarjeta gráfica (GPU)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/my-docs/sistemasMicroinformaticos/Sistema/integratedCards.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="verificar-si-la-placa-base-integra-tarjeta-grafica-gpu">
+<h1>Verificar si la placa base integra tarjeta gráfica (GPU)<a class="headerlink" href="#verificar-si-la-placa-base-integra-tarjeta-grafica-gpu" title="Permalink to this heading"></a></h1>
+<p>Este documento explica cómo comprobar si una placa base tiene gráficos integrados en sistemas <strong>Windows</strong> y <strong>Linux</strong>.</p>
+<hr class="docutils" />
+<section id="sistemas-windows">
+<h2>Sistemas Windows<a class="headerlink" href="#sistemas-windows" title="Permalink to this heading"></a></h2>
+<section id="metodo-1-administrador-de-dispositivos">
+<h3>Método 1: Administrador de dispositivos<a class="headerlink" href="#metodo-1-administrador-de-dispositivos" title="Permalink to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Presiona <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Win</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">X</kbd></kbd> y selecciona <strong>Administrador de dispositivos</strong>.</p></li>
+<li><p>Busca la sección <strong>Adaptadores de pantalla</strong>.
+- Si aparece un modelo (ej: <em>Intel HD Graphics</em>, <em>AMD Radeon Graphics</em>), hay GPU integrada.
+- Si solo muestra “Controlador de pantalla básica de Microsoft”, no hay gráficos integrados o faltan drivers.</p></li>
+</ol>
+</section>
+<section id="metodo-2-informacion-del-sistema-msinfo32">
+<h3>Método 2: Información del sistema (msinfo32)<a class="headerlink" href="#metodo-2-informacion-del-sistema-msinfo32" title="Permalink to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Ejecuta <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Win</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">R</kbd></kbd>, escribe <code class="docutils literal notranslate"><span class="pre">msinfo32</span></code> y presiona <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
+<li><p>Navega a:</p>
+<p><strong>Componentes → Pantalla</strong>.
+- Si hay datos en <strong>Nombre del adaptador</strong>, existe GPU integrada.</p>
+</li>
+</ol>
+</section>
+<section id="metodo-3-herramienta-dxdiag">
+<h3>Método 3: Herramienta DXDiag<a class="headerlink" href="#metodo-3-herramienta-dxdiag" title="Permalink to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Ejecuta <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Win</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">R</kbd></kbd>, escribe <code class="docutils literal notranslate"><span class="pre">dxdiag</span></code> y presiona <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
+<li><p>Revisa la pestaña <strong>Pantalla</strong>:</p>
+<ul class="simple">
+<li><p>El campo <strong>Nombre</strong> indica el modelo de GPU.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="metodo-4-consultar-modelo-de-placa-base">
+<h3>Método 4: Consultar modelo de placa base<a class="headerlink" href="#metodo-4-consultar-modelo-de-placa-base" title="Permalink to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Abre <kbd class="kbd docutils literal notranslate">cmd</kbd> y ejecuta:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wmic<span class="w"> </span>baseboard<span class="w"> </span>get<span class="w"> </span>product,Manufacturer
+</pre></div>
+</div>
+</li>
+<li><p>Busca el modelo en Google (ej: <em>“Asus B550M specs”</em>) para confirmar si incluye gráficos.</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sistemas-linux">
+<h2>Sistemas Linux<a class="headerlink" href="#sistemas-linux" title="Permalink to this heading"></a></h2>
+<section id="metodo-1-comando-lspci">
+<h3>Método 1: Comando <code class="docutils literal notranslate"><span class="pre">lspci</span></code><a class="headerlink" href="#metodo-1-comando-lspci" title="Permalink to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Ejecuta en terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>lspci<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>vga
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Si muestra una GPU (ej: <em>Intel UHD Graphics</em>), está integrada.</p></li>
+<li><p>Sin salida = no hay GPU integrada.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="metodo-2-verificar-drivers-activos">
+<h3>Método 2: Verificar drivers activos<a class="headerlink" href="#metodo-2-verificar-drivers-activos" title="Permalink to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Instala herramientas (si es necesario):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mesa-utils<span class="w"> </span><span class="c1"># Debian/Ubuntu</span>
+</pre></div>
+</div>
+</li>
+<li><p>Ejecuta:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>glxinfo<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;OpenGL renderer&quot;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="metodo-3-detalles-de-hardware">
+<h3>Método 3: Detalles de hardware<a class="headerlink" href="#metodo-3-detalles-de-hardware" title="Permalink to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Usa:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>lshw<span class="w"> </span>-C<span class="w"> </span>display
+</pre></div>
+</div>
+<p>o:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>hwinfo<span class="w"> </span>--gfxcard
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="metodo-4-verificar-cpu">
+<h3>Método 4: Verificar CPU<a class="headerlink" href="#metodo-4-verificar-cpu" title="Permalink to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Ejecuta:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>lscpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;model name&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Busca el modelo en:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://ark.intel.com">Intel ARK</a></p></li>
+<li><p><a class="reference external" href="https://www.amd.com">AMD</a></p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="notas-importantes">
+<h2>Notas importantes<a class="headerlink" href="#notas-importantes" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Intel</strong>: CPUs <strong>no</strong> terminadas en <em>F</em> (ej: i3-12100) suelen incluir GPU (Intel UHD/IRIS).</p></li>
+<li><p><strong>AMD</strong>: Modelos con <em>G</em> (ej: Ryzen 5 5600G) tienen gráficos integrados (Radeon Vega).</p></li>
+<li><p><strong>Placas base modernas</strong>: Dependen de la CPU para gráficos integrados.</p></li>
+</ul>
+<p>Si no se detecta GPU integrada, se requiere una tarjeta gráfica dedicada.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="perifericos.html" class="btn btn-neutral float-left" title="Periféricos clasificados por tipo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Buses.html" class="btn btn-neutral float-right" title="Buses del equipo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Linux Test Project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

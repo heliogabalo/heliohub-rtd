@@ -1,4 +1,4 @@
-DISKPART - particionado
+``diskpark`` - particionado
 ==========================
 
 Para comprobar el tipo de partición de un disco:

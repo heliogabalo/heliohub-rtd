@@ -1,0 +1,44 @@
+Sistema Operativo
+===================
+
+Es un conjunto de programas que gestionan y controlan los recursos de un ordenador.
+
+Funciones principales
+-----------------------
+
+- **Gestión de procesos**: es el sistema operativo quien se encarga de gestionar la creación, ejecución y terminación de cualquier proceso, asignando los recursos necesarios al mismo; memoria, tiempo de procesador, etc.
+- **Gestión de Memoria**: El *SO* es el encargado de gestionar la memoria del sistema, asignango espacio de memoria a los procesos
+- **Gestión de Archivos**
+- **Gestión de Entada/Salida**
+- **Seguridad**
+
+
+Administrador de discos
+--------------------------
+
+Administrador de dispositivos
+--------------------------------
+
+
+
+Montanr particiones en Windows
+---------------------------------
+
+Windows monta la partición al asignarle una letra de unidad. Dicho de otra forma: si no se le asigna una letra con el Administrador de discos, la unidad o medio de almacenamiento no será montada.
+
+Aunque lo dicho anteriormente es cierto en términos generales, no es absolutamente exacto. Técnicamente, una partición puede estar montada sin letra de unidad, pero en ese caso solo sería accesible mediante rutas de montaje en carpetas o herramientas especializadas. Por ejemplo, Windows permite montar una partición en una carpeta vacía de una unidad existente, sin asignarle una letra.
+
+
+
+
+Apuntes
+----------
+
+https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/simuladorRETAPublico
+
+nota:
+FacturaDirecta
+holded
+zdescargas.org
+modding
+
