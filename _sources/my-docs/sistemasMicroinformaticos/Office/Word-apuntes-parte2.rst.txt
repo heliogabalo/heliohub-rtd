@@ -20,7 +20,7 @@ Es **importante** seleccionar si queremos que el formato de columnas que hayamos
 
 Para cambiar entre columna, deberemos utilizar el botón *Saltos* que se encuentra junto a botón Columnas, en la ficha formato. Una vez, esté definido el formato de columnas, volver a una columna ya escrita, es posible hacerlo, situando simplemente el puntero con el ratón.
 
-   * **Se pide el espaciado donde haya una sola columna** *
+   - **Se pide el espaciado donde haya una sola columna**
 
 .. warning::
    Si cometemos un error al seleccionar el número de columnas, pero ya hemos avanzado en la escritura del texto y no queremos borrarlo; para corregir el error, lo mejor será seleccionar todo el texto y volver a aplicar el número de columnas. Podremos corregir también las marcas de ``salto de sección``, borrándolas.

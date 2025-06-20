@@ -20,6 +20,7 @@ This section covers system configuration files, kernel configuration, and handli
    :caption: OS installation:
 
    sys_files/advancedOSinstallation.rst
+   sys_files/preserveUserData.rst
 
 Available documentation relateted to operating system installation. 
 

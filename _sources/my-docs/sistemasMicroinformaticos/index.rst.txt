@@ -37,7 +37,7 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    OS/SO_portatil.rst
    OS/EFIpartWindows.rst
    OS/tipoArranquePS.rst
-   
+   OS/SO.rst
 
 .. tip::
 
@@ -62,7 +62,10 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 
    Office/Word-apuntes-parte1.rst
    Office/Word-apuntes-parte2.rst
-   
+   Office/Word-apuntes-parte3.rst
+..   Office/prueba-1.rst
+..   Office/prueba-2.rst
+..   Office/prueba-3.rst
    
 .. tip::
    

@@ -31,6 +31,15 @@ Crear particiones
 - **Seguir el asistente** Habrá que especificar el tamaño, la letra de la unidad y el sistema de archivos(*NTFS o FAT32*).
 - **Formatear la partición** una vez creada la partición se deberá formatear, para hacerlo click derecho  en la partición y seleccionar *Formatear*.
 
+
+Montar particiones en Windows
+---------------------------------
+
+Windows monta la partición al asignarle una letra de unidad. Dicho de otra forma: si no se le asigna una letra con el Administrador de discos, la unidad o medio de almacenamiento no será montada.
+
+Aunque lo dicho anteriormente es cierto en términos generales, no es absolutamente exacto. Técnicamente, una partición puede estar montada sin letra de unidad, pero en ese caso solo sería accesible mediante rutas de montaje en carpetas o herramientas especializadas. Por ejemplo, Windows permite montar una partición en una carpeta vacía de una unidad existente, sin asignarle una letra.
+
+
 Permisos de NTFS
 ------------------
 Abrimos las propiedades de archivo y seleccionamos la pestaña
