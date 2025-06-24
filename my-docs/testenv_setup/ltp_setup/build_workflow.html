@@ -24,8 +24,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Briefing on LTP (Linux Test Project) and Device Driver Test Cases" href="../../driver_dev/drv_refs/driverBrief.html" />
-    <link rel="prev" title="Check Headers" href="checkHeaders.html" /> 
+    <link rel="next" title="LTP build log" href="weakness_config.html" />
+    <link rel="prev" title="Working with Older Kernel Versions on CentOS 7: Challenges and Solutions" href="oldKernels.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -75,38 +75,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../maintainers/ltp_release_procedure.html">Release process</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Custom Documents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Welcome to the Project Documentation</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../vm_config/cxt4testing.html">Setting Up LTP Test Cases on a Linux VM Environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vm_config/vm-setup.html">Setting Up a VM to Boot with a Copied Kernel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vm_config/enableBootMenu.html">Enabling the Boot Menu During Boot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vm_config/bootloader-dirs.html">Understanding Bootloader Directories and Customizing GRUB</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vm_config/bootloader-mode.html">Determine Boot Mode and Bootloader</a></li>
-<li class="toctree-l2"><a class="reference internal" href="weakness_config.html">LTP build log</a></li>
-<li class="toctree-l2"><a class="reference internal" href="documents-build.html">Building the Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rst_symbols.html">List of Symbols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="autoConfHd.html">Using Autoconf Macros to Check for Headers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="checkHeaders.html">Check Headers</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Using Autotools in the LTP Build Process</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#purpose-of-autotools-commands">Purpose of Autotools Commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#typical-workflow-for-building-ltp">Typical Workflow for Building LTP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#example-session">Example Session</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#summary">Summary</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/driverBrief.html">Briefing on LTP (Linux Test Project) and Device Driver Test Cases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/mmioVsIOports.html">Briefing: Memory-Mapped I/O vs. I/O Ports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/pcie-symobls.html">PCIe Symobls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/deadline-iosched.html">Deadline IO scheduler tunables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/quick-ref-pci.html">PCI Functions Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/sysTasks.html">Concurrent ltp build with system tasks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/bus-map.html">Bus Map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/pci-exp-tests-HOWTO.html">HOWTO –&gt;       PCI-Express test scripts for LTP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/hw_specs/workFlow-strace.html">Workflow for Using <code class="docutils literal notranslate"><span class="pre">strace</span></code> to Trap System Calls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../sys_config/kernel_conf/environ-kconf.html">Kernel Configuration for KUnit Tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../sys_config/sys_files/dummy-build.html">Safe Dry-Run for Sphinx Builds</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Topic Index</a></li>
 </ul>
 
         </div>
@@ -123,7 +93,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Welcome to the Project Documentation</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Topic Index</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Testing Environment Setup</a></li>
       <li class="breadcrumb-item active">Using Autotools in the LTP Build Process</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/my-docs/testenv_setup/ltp_setup/build_workflow.rst.txt" rel="nofollow"> View page source</a>
@@ -242,8 +213,8 @@ make<span class="w"> </span>install
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="checkHeaders.html" class="btn btn-neutral float-left" title="Check Headers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../driver_dev/drv_refs/driverBrief.html" class="btn btn-neutral float-right" title="Briefing on LTP (Linux Test Project) and Device Driver Test Cases" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="oldKernels.html" class="btn btn-neutral float-left" title="Working with Older Kernel Versions on CentOS 7: Challenges and Solutions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="weakness_config.html" class="btn btn-neutral float-right" title="LTP build log" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

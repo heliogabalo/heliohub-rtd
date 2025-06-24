@@ -25,7 +25,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="How to Limit CPU Computation Consumption for Builds and Compilation" href="compCPU.html" />
-    <link rel="prev" title="Bus Map" href="bus-map.html" /> 
+    <link rel="prev" title="Bus Map" href="bus-map-refact.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -75,51 +75,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../maintainers/ltp_release_procedure.html">Release process</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Custom Documents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Topic Index</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/vm_config/cxt4testing.html">Setting Up LTP Test Cases on a Linux VM Environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/vm_config/vm-setup.html">Setting Up a VM to Boot with a Copied Kernel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/vm_config/enableBootMenu.html">Enabling the Boot Menu During Boot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/vm_config/bootloader-dirs.html">Understanding Bootloader Directories and Customizing GRUB</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/vm_config/bootloader-mode.html">Determine Boot Mode and Bootloader</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/vm_config/queringXML.html">Querying XML File Configuration with libvirt Shell</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/vm_config/identifyBootloader.html">Inspecting the MBR to Identify the Bootloader</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/vm_config/bootloaderDebug.html">Determining the Bootloader and Kernel/Ramdisk Loading in a KVM VM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/vm_config/vmCxtBootLoad.html">Focusing on the VM Context: How the Kernel and Initramfs Are Loaded</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/ltp_setup/weakness_config.html">LTP build log</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/ltp_setup/documents-build.html">Building the Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/ltp_setup/rst_symbols.html">List of Symbols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/ltp_setup/autoConfHd.html">Using Autoconf Macros to Check for Headers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/ltp_setup/checkHeaders.html">Check Headers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/ltp_setup/build_workflow.html">Using Autotools in the LTP Build Process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/ltp_setup/deugHeaders.html">Debuggin Kernel Headers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/ltp_setup/directoryPermissions.html">Understanding Directory Permission Strings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testenv_setup/Debugging/bootloaderChecks.html">Confirming Bootloader and Kernel Loading with UUID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../driver_dev/drv_refs/driverBrief.html">Briefing on LTP (Linux Test Project) and Device Driver Test Cases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../driver_dev/drv_refs/mmioVsIOports.html">Briefing: Memory-Mapped I/O vs. I/O Ports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../driver_dev/drv_refs/pcie-symobls.html">PCIe Symobls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../driver_dev/drv_refs/deadline-iosched.html">Deadline IO scheduler tunables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../driver_dev/drv_refs/quick-ref-pci.html">PCI Functions Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../driver_dev/watcherDocs/st_pci_device_id.html">struct pci_device_id</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sysTasks.html">Concurrent ltp build with system tasks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bus-map.html">Bus Map</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">HOWTO –&gt;       PCI-Express test scripts for LTP</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#about-this-howto">1. About this HOWTO</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#copyright-c-intel-corporation-2004">2. Copyright (c) Intel Corporation, 2004</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#what-is-this-patch-doing">3. What is this patch doing?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#including-pci-express-support-into-the-kernel">4. Including PCI-Express support into the kernel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#faq">5. FAQ</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="compCPU.html">How to Limit CPU Computation Consumption for Builds and Compilation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw_specs/workFlow-strace.html">Workflow for Using <code class="docutils literal notranslate"><span class="pre">strace</span></code> to Trap System Calls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys_config/sys_files/dummy-build.html">Safe Dry-Run for Sphinx Builds</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys_config/sys_files/save_rmdir.html">Involuntary Directory Removal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys_config/kernel_conf/environ-kconf.html">Kernel Configuration for KUnit Tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Unordered/pathTruncator.html">Integrating Path Truncation into Read the Docs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Unordered/regexNotation.html">REGEX notation</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Topic Index</a></li>
 </ul>
 
         </div>
@@ -137,6 +94,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Topic Index</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Hardware and System Resources</a></li>
       <li class="breadcrumb-item active">HOWTO –&gt;       PCI-Express test scripts for LTP</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/my-docs/hw_resources/pci-exp-tests-HOWTO.rst.txt" rel="nofollow"> View page source</a>
@@ -203,7 +161,7 @@ capable device. If both the values match that means that the PCI-Express driver 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="bus-map.html" class="btn btn-neutral float-left" title="Bus Map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bus-map-refact.html" class="btn btn-neutral float-left" title="Bus Map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="compCPU.html" class="btn btn-neutral float-right" title="How to Limit CPU Computation Consumption for Builds and Compilation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

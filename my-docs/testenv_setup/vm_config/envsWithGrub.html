@@ -24,7 +24,7 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="LTP build log" href="../ltp_setup/weakness_config.html" />
+    <link rel="next" title="Working with Older Kernel Versions on CentOS 7: Challenges and Solutions" href="../ltp_setup/oldKernels.html" />
     <link rel="prev" title="Focusing on the VM Context: How the Kernel and Initramfs Are Loaded" href="vmCxtBootLoad.html" /> 
 </head>
 
@@ -75,45 +75,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../maintainers/ltp_release_procedure.html">Release process</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Custom Documents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Topic Index</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Testing Environment Setup</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="cxt4testing.html">Setting Up LTP Test Cases on a Linux VM Environment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vm-setup.html">Setting Up a VM to Boot with a Copied Kernel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="enableBootMenu.html">Enabling the Boot Menu During Boot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bootloader-dirs.html">Understanding Bootloader Directories and Customizing GRUB</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bootloader-mode.html">Determine Boot Mode and Bootloader</a></li>
-<li class="toctree-l3"><a class="reference internal" href="queringXML.html">Querying XML File Configuration with libvirt Shell</a></li>
-<li class="toctree-l3"><a class="reference internal" href="identifyBootloader.html">Inspecting the MBR to Identify the Bootloader</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bootloaderDebug.html">Determining the Bootloader and Kernel/Ramdisk Loading in a KVM VM</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vmCxtBootLoad.html">Focusing on the VM Context: How the Kernel and Initramfs Are Loaded</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Understanding <code class="docutils literal notranslate"><span class="pre">grub2-editenv</span> <span class="pre">list</span></code> Output: Saved Entry Hash</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#what-is-the-grubenv-file">1. What is the <code class="docutils literal notranslate"><span class="pre">grubenv</span></code> File?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#decoding-the-saved-entry-hash">2. Decoding the <code class="docutils literal notranslate"><span class="pre">saved_entry</span></code> Hash</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#why-a-hash-instead-of-a-name">3. Why a Hash Instead of a Name?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#mapping-the-hash-to-a-boot-entry">4. Mapping the Hash to a Boot Entry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#example-workflow">5. Example Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#implications-for-your-vm">6. Implications for Your VM</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#next-steps">7. Next Steps</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../ltp_setup/weakness_config.html">LTP build log</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ltp_setup/documents-build.html">Building the Documentation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ltp_setup/rst_symbols.html">List of Symbols</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ltp_setup/autoConfHd.html">Using Autoconf Macros to Check for Headers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ltp_setup/checkHeaders.html">Check Headers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ltp_setup/build_workflow.html">Using Autotools in the LTP Build Process</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ltp_setup/deugHeaders.html">Debuggin Kernel Headers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ltp_setup/directoryPermissions.html">Understanding Directory Permission Strings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Debugging/bootloaderChecks.html">Confirming Bootloader and Kernel Loading with UUID</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/index.html">Driver Development</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/index.html">Hardware and System Resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../sys_config/index.html">System Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Unordered/index.html">Unordered Topics</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Topic Index</a></li>
 </ul>
 
         </div>
@@ -232,7 +195,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="vmCxtBootLoad.html" class="btn btn-neutral float-left" title="Focusing on the VM Context: How the Kernel and Initramfs Are Loaded" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../ltp_setup/weakness_config.html" class="btn btn-neutral float-right" title="LTP build log" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../ltp_setup/oldKernels.html" class="btn btn-neutral float-right" title="Working with Older Kernel Versions on CentOS 7: Challenges and Solutions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

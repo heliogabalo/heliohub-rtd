@@ -75,57 +75,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../maintainers/ltp_release_procedure.html">Release process</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Custom Documents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Topic Index</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="cxt4testing.html">Setting Up LTP Test Cases on a Linux VM Environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vm-setup.html">Setting Up a VM to Boot with a Copied Kernel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="enableBootMenu.html">Enabling the Boot Menu During Boot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bootloader-dirs.html">Understanding Bootloader Directories and Customizing GRUB</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Determine Boot Mode and Bootloader</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#step-1-determine-the-architecture">Step 1: Determine the Architecture</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#step-2-determine-the-boot-mode-bios-vs-uefi">Step 2: Determine the Boot Mode (BIOS vs. UEFI)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#check-for-uefi-boot">Check for UEFI Boot</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#check-for-systemd-boot-configuration">Check for systemd-boot Configuration</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#step-3-verify-the-bootloader-in-use">Step 3: Verify the Bootloader in Use</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#step-4-proceed-based-on-bootloader">Step 4: Proceed Based on Bootloader</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#for-systemd-boot-uefi">For systemd-boot (UEFI)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#for-grub-bios">For GRUB (BIOS)</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#summary-of-steps">Summary of Steps</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="queringXML.html">Querying XML File Configuration with libvirt Shell</a></li>
-<li class="toctree-l2"><a class="reference internal" href="identifyBootloader.html">Inspecting the MBR to Identify the Bootloader</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bootloaderDebug.html">Determining the Bootloader and Kernel/Ramdisk Loading in a KVM VM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Debugging/bootloaderChecks.html">Confirming Bootloader and Kernel Loading with UUID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ltp_setup/weakness_config.html">LTP build log</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ltp_setup/documents-build.html">Building the Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ltp_setup/rst_symbols.html">List of Symbols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ltp_setup/autoConfHd.html">Using Autoconf Macros to Check for Headers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ltp_setup/checkHeaders.html">Check Headers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ltp_setup/build_workflow.html">Using Autotools in the LTP Build Process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ltp_setup/deugHeaders.html">Debuggin Kernel Headers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ltp_setup/directoryPermissions.html">Understanding Directory Permission Strings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/driverBrief.html">Briefing on LTP (Linux Test Project) and Device Driver Test Cases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/mmioVsIOports.html">Briefing: Memory-Mapped I/O vs. I/O Ports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/pcie-symobls.html">PCIe Symobls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/deadline-iosched.html">Deadline IO scheduler tunables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/drv_refs/quick-ref-pci.html">PCI Functions Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/sysTasks.html">Concurrent ltp build with system tasks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/bus-map.html">Bus Map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/pci-exp-tests-HOWTO.html">HOWTO –&gt;       PCI-Express test scripts for LTP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/compCPU.html">How to Limit CPU Computation Consumption for Builds and Compilation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/hw_specs/workFlow-strace.html">Workflow for Using <code class="docutils literal notranslate"><span class="pre">strace</span></code> to Trap System Calls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../sys_config/sys_files/dummy-build.html">Safe Dry-Run for Sphinx Builds</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../sys_config/sys_files/save_rmdir.html">Involuntary Directory Removal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../sys_config/kernel_conf/environ-kconf.html">Kernel Configuration for KUnit Tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Unordered/pathTruncator.html">Integrating Path Truncation into Read the Docs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Unordered/regexNotation.html">REGEX notation</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Topic Index</a></li>
 </ul>
 
         </div>
@@ -143,6 +94,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Topic Index</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Testing Environment Setup</a></li>
       <li class="breadcrumb-item active">Determine Boot Mode and Bootloader</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/my-docs/testenv_setup/vm_config/bootloader-mode.rst.txt" rel="nofollow"> View page source</a>

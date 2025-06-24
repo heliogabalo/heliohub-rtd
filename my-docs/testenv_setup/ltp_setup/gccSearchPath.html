@@ -24,7 +24,7 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Confirming Bootloader and Kernel Loading with UUID" href="../Debugging/bootloaderChecks.html" />
+    <link rel="next" title="Overview of Autotools Primary Concepts" href="Autotools_overview.html" />
     <link rel="prev" title="Understanding Directory Permission Strings" href="directoryPermissions.html" /> 
 </head>
 
@@ -75,48 +75,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../maintainers/ltp_release_procedure.html">Release process</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Custom Documents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Topic Index</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Testing Environment Setup</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/cxt4testing.html">Setting Up LTP Test Cases on a Linux VM Environment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/vm-setup.html">Setting Up a VM to Boot with a Copied Kernel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/enableBootMenu.html">Enabling the Boot Menu During Boot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/bootloader-dirs.html">Understanding Bootloader Directories and Customizing GRUB</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/bootloader-mode.html">Determine Boot Mode and Bootloader</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/queringXML.html">Querying XML File Configuration with libvirt Shell</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/identifyBootloader.html">Inspecting the MBR to Identify the Bootloader</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/bootloaderDebug.html">Determining the Bootloader and Kernel/Ramdisk Loading in a KVM VM</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/vmCxtBootLoad.html">Focusing on the VM Context: How the Kernel and Initramfs Are Loaded</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../vm_config/envsWithGrub.html">Understanding <code class="docutils literal notranslate"><span class="pre">grub2-editenv</span> <span class="pre">list</span></code> Output: Saved Entry Hash</a></li>
-<li class="toctree-l3"><a class="reference internal" href="build_workflow.html">Using Autotools in the LTP Build Process</a></li>
-<li class="toctree-l3"><a class="reference internal" href="weakness_config.html">LTP build log</a></li>
-<li class="toctree-l3"><a class="reference internal" href="documents-build.html">Building the Documentation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="checkHeaders.html">Check Headers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="debugHeaders.html">Debuggin Kernel Headers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configLog_analysis.html">LTP Configuration Debugging Analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="headerResolution.html">How to Fix Missing <cite>linux/module.h</cite> in LTP Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="relevantLinuxSource.html">Understanding /usr/src/linux Symlink Importance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sadButTrue.html">The /usr/src/linux Reality Check</a></li>
-<li class="toctree-l3"><a class="reference internal" href="rst_symbols.html">List of Symbols</a></li>
-<li class="toctree-l3"><a class="reference internal" href="autoConfHd.html">Using Autoconf Macros to Check for Headers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="directoryPermissions.html">Understanding Directory Permission Strings</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Check GCC Search Path for Kernel Headers in GNU/Linux</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#explanation">Explanation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#expected-output">Expected Output</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#view-all-include-paths">View All Include Paths</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#purpose-of-usr-src-kernels">Purpose of <code class="docutils literal notranslate"><span class="pre">/usr/src/kernels</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#install-missing-headers">Install Missing Headers</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../Debugging/bootloaderChecks.html">Confirming Bootloader and Kernel Loading with UUID</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/index.html">Driver Development</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/index.html">Hardware and System Resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../sys_config/index.html">System Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Unordered/index.html">Unordered Topics</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Topic Index</a></li>
 </ul>
 
         </div>
@@ -211,7 +171,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="directoryPermissions.html" class="btn btn-neutral float-left" title="Understanding Directory Permission Strings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../Debugging/bootloaderChecks.html" class="btn btn-neutral float-right" title="Confirming Bootloader and Kernel Loading with UUID" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Autotools_overview.html" class="btn btn-neutral float-right" title="Overview of Autotools Primary Concepts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
