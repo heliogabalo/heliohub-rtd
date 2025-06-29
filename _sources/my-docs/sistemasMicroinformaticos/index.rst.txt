@@ -38,7 +38,8 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    OS/EFIpartWindows.rst
    OS/tipoArranquePS.rst
    OS/SO.rst
-   OS/resetUserpwd.rst
+   OS/recuperarCuentas.rst
+   OS/recuperarCuentasPractica.rst
    
 
 .. tip::
@@ -60,12 +61,11 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 	
 .. toctree::
    :maxdepth: 2
-   :caption: Office:
+   :caption: Office, Word:
 
    Office/Word-apuntes-parte1.rst
    Office/Word-apuntes-parte2.rst
    Office/Word-apuntes-parte3.rst
-..   Office/prueba-1.rst
 ..   Office/prueba-2.rst
 ..   Office/prueba-3.rst
    
@@ -74,12 +74,25 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 	**Word**: documentación sobre la herramienta *Word* de *Office*.
 	
 	
+.. toctree::
+   :maxdepth: 2
+   :caption: Office, Excel:
+	
+   Office/excel.rst
+   
+.. tip::
+   
+	**Excel**: documentación sobre la herramienta *Excel* de *Office*.
+	
+	
 Downloadable files
 =====================
 
 - Click to download: :download:`Tema 1 - Arquitectura de Sistema <descargas/Tema-1-Arquitecturas_de_un_sistema_microinformático.pdf>`
 - Click to download: :download:`Tema 2 - Funciones del SO <descargas/Tema-2_FuncionesSistemaOperativo.pdf>`
 - Click to download: :download:`Velocidad de la Ram <descargas/Artículo._La_velocidad_de_la_memoria_RAM_y_su_latencia.pdf>`
+- Click to download: :download:`Tema 3 - Elementos del SO <descargas/Tema_3._Elementos_de_un_Sistema_Operativo_Informático.pdf>`
+- Click to download: :download:`Tema 4 - Sistemas(SO) Actuales <descargas/Tema_4._Sistemas_operativos_informáticos_actuales.pdf>`
 
 .. warning::
    

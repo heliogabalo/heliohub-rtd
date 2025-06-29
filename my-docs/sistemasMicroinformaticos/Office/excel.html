@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel &mdash; Linux Test Project 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/js/pathTruncator.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Unordered Topics" href="../../Unordered/index.html" />
+    <link rel="prev" title="Tercera parte" href="Word-apuntes-parte3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Linux Test Project
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">For users</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/quick_start.html">Installation and tests execution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/setup_tests.html">Tests setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/supported_systems.html">Supported systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/stats.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/test_catalog.html">Test catalog</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">For developers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/setup_mailinglist.html">Setting up the Mailing list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/writing_tests.html">Writing tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/test_case_tutorial.html">Test case tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_c_tests.html">LTP C API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_shell_tests.html">LTP shell API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_network_tests.html">Developing using network API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/api_kvm_tests.html">Developing using KVM API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/ltp_library.html">LTP Library guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/build_system.html">Build system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developers/documentation.html">Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">For maintainers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../maintainers/patch_review.html">Patch review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../maintainers/ltp_release_procedure.html">Release process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Custom Documents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Topic Index</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../testenv_setup/index.html">Testing Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver_dev/index.html">Driver Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../hw_resources/index.html">Hardware and System Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sys_config/index.html">System Configuration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Sistemas Microinformaticos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/GeorgeBoole.html">Álgebra de Boole en Programación: Contexto Histórico y Aplicaciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/arquitecturaVonNeuman.html">La arquitectura Von Neumann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/VonNeumann.html">John von Neumann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/Memorias.html">Tipos y características de memoria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/perifericos.html">Periféricos clasificados por tipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/integratedCards.html">Verificar si la placa base integra tarjeta gráfica (GPU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/Buses.html">Buses del equipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/anchoBusGPU.html">Interpretación del “Ancho del Bus” en Tarjetas Gráficas (GPU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/conectoresDelEquipo.html">Conectores externos del equipo.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/UEFI.html">¿Qué es el estándar UEFI?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/UEFI-refs.html">Referenciando funciones en UEFI mediante identificadores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/caracteristicasEquipo.html">Caracteristicas del equipo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/particionadorDeWindows.html"><code class="docutils literal notranslate"><span class="pre">diskpark</span></code> - particionado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/SO_portatil.html">Creación de medios de instalación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/EFIpartWindows.html">Windows hardening, EFI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/tipoArranquePS.html">Información del Sistema relacionada con UEFI usando PowerShell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/SO.html">Sistema Operativo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/recuperarCuentas.html">Recuperación de cuentas de usuario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/recuperarCuentasPractica.html">Práctica - Recuperación de cuentas de usuario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte1.html">Primera parte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte2.html">Segunda parte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte3.html">Tercera parte</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Excel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#boton-borrar">Bóton borrar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bordes">Bordes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formato-en-los-numeros">Formato en los números</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fechas">Fechas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#series">Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#estilo-nombre-y-posicion-de-las-hojas">Estilo, nombre  y posición de las hojas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operaciones">Operaciones</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#downloadable-files">Downloadable files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Unordered/index.html">Unordered Topics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Linux Test Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Topic Index</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Sistemas Microinformaticos</a></li>
+      <li class="breadcrumb-item active">Excel</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/my-docs/sistemasMicroinformaticos/Office/excel.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="excel">
+<h1>Excel<a class="headerlink" href="#excel" title="Permalink to this heading"></a></h1>
+<p>Extensión de archivo:</p>
+<ul class="simple">
+<li><p>Word -&gt; .docx -&gt; Documento</p></li>
+<li><p>Excel -&gt; .xlsx -&gt; Libro</p></li>
+</ul>
+<p>Es importante en Excel confirmar o validar el valor de una celda. Para ello podremos utilizar la tecla intro, flecha dirección, tabulador o el ratón.</p>
+<section id="boton-borrar">
+<h2>Bóton borrar<a class="headerlink" href="#boton-borrar" title="Permalink to this heading"></a></h2>
+<p>Al regresar a una hoja excel que ya estuvimos utilizando, habrá que asegurarse que los formatos definidos para valores anteriores, no afectan a los nuevos datos que se introducirán en la hoja. Para ello podremos utilizar el botón borrar, junto al lado izquirdo de la cinta de opciones Excel.</p>
+<ul class="simple">
+<li><p>Borrar todo</p></li>
+<li><p>Borrar formatos</p></li>
+<li><p>Borrar contenido</p></li>
+<li><p>Borrar comentarios</p></li>
+<li><p>Borrar hipervínculos</p></li>
+</ul>
+</section>
+<section id="bordes">
+<h2>Bordes<a class="headerlink" href="#bordes" title="Permalink to this heading"></a></h2>
+<p>Para poner bordes en Excel habrá que seguir un orden concreto:</p>
+<ol class="arabic simple">
+<li><p>Estilo y color</p></li>
+<li><p>Borde, seleccionamos el border a ma</p></li>
+<li><p>preestablecidos; ninguno, Contorno e interior</p></li>
+</ol>
+<ul class="simple">
+<li><p>Para seleccionar toda la columna, situaremos el cursor del ratón sobre la letra y haremos click sobre ella.</p></li>
+<li><p>Para seleccionar toda la fila, situaremos el cursor del ratón sobre el número y haremos click sobre él.</p></li>
+<li><p>Para seleccionar toda la tabla, situaremos el cursor del ratón sobre el triángulo que vemos sobre el primer número de la tabla -o a la izquierda de la columna A.</p></li>
+<li><p>Cambiar el ancho de una columna. En excel sólo podremos cambiar el ancho de columna desde la fila que representa a las columnas; A, B, C.</p></li>
+<li><p>Cambiar el alto de una fila. Para cambiar la altura de columna desde la fila que representa a las columnas; A, B, C.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La tecla suprimir borra el texto, pero no el formato.
+En la pestaña Inicio, al final; dentro del grupo Edición, podremos utilizar el deslegable de borrar, para ajustar qué borrar.</p>
+</div>
+</section>
+<section id="formato-en-los-numeros">
+<h2>Formato en los números<a class="headerlink" href="#formato-en-los-numeros" title="Permalink to this heading"></a></h2>
+<p>En la ficha inicio el grupo Número, nos permitirá activar un formato específico para las celdas.</p>
+<ul class="simple">
+<li><p><a href="#id1"><span class="problematic" id="id2">**</span></a>Formato de número de contabilidad**(Billete/monedas). Éste botón se utiliza para dinero.</p></li>
+<li><p><strong>Estilo millares(000)</strong>. Se utiliza para cantidades.</p></li>
+<li><p><strong>Aumentar decimales</strong>. Aumenta una cifra cada vez.</p></li>
+<li><p><strong>Disminuir decimales</strong>. Disminuye una cifra cada vez.</p></li>
+<li><p><strong>General</strong>, al desplegar este botón en “más formato de número” podremos elegir la moneda, además de otras características.</p></li>
+<li><p>Botón de <kbd class="kbd docutils literal notranslate">porcentaje</kbd>, multiplica por cien y coloca el símbolo. Para escribir el porcentaje lo mejor es utilizar la tecla.</p></li>
+</ul>
+<p>El Botón se comporta de forma diferente si hay o no algo escrito en la celda. Si no hay nada escrito, simplemente añadirá el símbolo, una vez escribamos el número.</p>
+</section>
+<section id="fechas">
+<h2>Fechas<a class="headerlink" href="#fechas" title="Permalink to this heading"></a></h2>
+<p>Siempre utilizaremos barra <code class="docutils literal notranslate"><span class="pre">/</span></code> o guiión <code class="docutils literal notranslate"><span class="pre">-</span></code> como separador. Los ceros para números menores de diez, tampoco se escriben.</p>
+<p>Si escribimos la fecha:</p>
+<p>Desplegar el botón fecha -&gt; más formatos de números -&gt; categoría -&gt; fecha</p>
+<p>Si escribimos la hora:</p>
+<p>Desplegar el botón <kbd class="kbd docutils literal notranslate">fecha</kbd> -&gt; más formatos de números -&gt; categoría -&gt; hora</p>
+</section>
+<section id="series">
+<h2>Series<a class="headerlink" href="#series" title="Permalink to this heading"></a></h2>
+<p>Excel es capaz de recordar listas conocidas; lunues, martes, miércoles.., Enero, Febrero, Marzo..
+Para indicar que escriba automáticamente el siguiente elemento en la lista  …Abril, Mayo, Junio.., Deberemos iniciar el primer elemento y arrastrar con el ratón hasta la celda indicada, cuando sale la flecha negra.</p>
+<p>Si nos saltamos algún elemento 1, 3, 5…, o Enero, Marzo, Mayo…,  Habrá que indicar al menos, los dos primeros elementos de la lista.</p>
+</section>
+<section id="estilo-nombre-y-posicion-de-las-hojas">
+<h2>Estilo, nombre  y posición de las hojas<a class="headerlink" href="#estilo-nombre-y-posicion-de-las-hojas" title="Permalink to this heading"></a></h2>
+<p><strong>Nombre de las hojas:</strong> Con doble click se cambia el nombre de la hoja.
+<strong>Estilo o color:</strong> Es posible cambiar el color de la pestaña, si pulsamos el botón secundario del ratón y seleccionamos la opción: <em>color pestaña</em>.
+<strong>Posición:</strong> Arastrando con el ratón, deberemos posicinarla justo después del triángulo cuando salga.</p>
+</section>
+<section id="operaciones">
+<h2>Operaciones<a class="headerlink" href="#operaciones" title="Permalink to this heading"></a></h2>
+<p>En Excel se utilizan dos tipos de operaciones; fórmulas y funciones.</p>
+<section id="formulas">
+<h3>Fórmulas<a class="headerlink" href="#formulas" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Aritméticas</strong>; sumar(+), restar(-), multiplicar(*) y dividir(/).</p></li>
+<li><p><strong>Lógicas</strong>; mayor(&gt;), menor(&lt;), mayor que(&gt;=), menor que(&lt;=), distinto(&lt;&gt;).</p></li>
+</ul>
+<dl class="simple">
+<dt>Habrá que seguir siempre el procedimiento: nos situamos sobre la celda que contendrá el valor. Para iniciar una fórmula :</dt><dd><ol class="arabic simple">
+<li><p>Hay que escribir el símbolo igual <cite>=</cite>.</p></li>
+<li><p>Seleccionar la primera celda con la que operarar</p></li>
+<li><p>Definir la operación sumar(+), restar(-), multiplicar(*) y dividir(/).</p></li>
+<li><p>Seleccionar la siguiente celda con la que operarar.</p></li>
+<li><p>Repetir.</p></li>
+<li><p>confirmar con <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
+</ol>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>La propiedad asociada a la operación 3 + 2 * 5 = 13 es la <strong>propiedad de precedencia de operadores</strong> o <strong>jerarquía de operaciones</strong>.</p>
+<p>Específicamente, en matemáticas, la multiplicación y la división tienen mayor precedencia que la suma y la resta. Esto significa que en una expresión como 3 + 2 * 5, primero se realiza la multiplicación (2 * 5 = 10) y luego la suma (3 + 10 = 13).</p>
+<p>Si no se aplicara esta propiedad, y se operara de izquierda a derecha, el resultado sería incorrecto: (3 + 2) 5 = 5 * 5 = 25.</p>
+</div>
+</section>
+<section id="funciones">
+<h3>Funciones<a class="headerlink" href="#funciones" title="Permalink to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Colocarse en la celda.</p></li>
+<li><p>Botón Sigma. Auto suma; Desplegar botón.</p></li>
+<li><p>Seleccionar la función deseada.</p></li>
+<li><p><kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
+</ol>
+<p>Siempre que haya que hacer una operación entre dos celdas y una contenga <code class="docutils literal notranslate"><span class="pre">%</span></code> habrá multiplicación.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Word-apuntes-parte3.html" class="btn btn-neutral float-left" title="Tercera parte" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../Unordered/index.html" class="btn btn-neutral float-right" title="Unordered Topics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Linux Test Project.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
