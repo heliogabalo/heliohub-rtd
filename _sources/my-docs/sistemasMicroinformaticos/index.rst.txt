@@ -40,7 +40,10 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    OS/SO.rst
    OS/recuperarCuentas.rst
    OS/recuperarCuentasPractica.rst
-   
+   OS/explorerWindows.rst
+   OS/caracteristicasDeWindows10.rst
+   OS/caracteristicasDeWindows11.rst
+   OS/caracteristicasDeLinux-rhelVSdebian.rst
 
 .. tip::
 
