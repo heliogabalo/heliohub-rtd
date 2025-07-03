@@ -103,7 +103,7 @@
 <li class="toctree-l3"><a class="reference internal" href="recuperarCuentas.html">Recuperación de cuentas de usuario</a></li>
 <li class="toctree-l3"><a class="reference internal" href="recuperarCuentasPractica.html">Práctica - Recuperación de cuentas de usuario</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Práctica - forzar la carga del explorer de windows</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#analisis-de-la-situacion-del-procesador-celeron-en-windows-10">Análisis de la Situación del Procesador Celeron en Windows 10</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#analisis-de-la-situacion-del-procesador">Análisis de la Situación del Procesador</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="caracteristicasDeWindows10.html">Características de us sistema Windows 10</a></li>
@@ -150,25 +150,19 @@
              
   <section id="practica-forzar-la-carga-del-explorer-de-windows">
 <h1>Práctica - forzar la carga del explorer de windows<a class="headerlink" href="#practica-forzar-la-carga-del-explorer-de-windows" title="Permalink to this heading"></a></h1>
-<ul class="simple">
-<li><p>Abrir el administrador de tareas -&gt; nueva tarea -&gt; explorer</p></li>
-</ul>
-<p>(investigar).</p>
-<p>Tengo una computadora con un procesador celeron -ya obsoleto, y al hacer la instalación de windows 10 en un disco SSD(nuevo), encuentro que el procesador está muy ocupado. Ha pasado cerca de 20 minutos cargando con un porcentaje de uso de un 100%.
-La pantalla apenas era capaz de mostrar el puntero del ratón. Se ha decidido entonces, abrir el <strong>administrador de tareas</strong> -&gt; <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">nueva</kbd> <kbd class="kbd docutils literal notranslate">tarea</kbd></kbd> -&gt; y lanzar el <code class="docutils literal notranslate"><span class="pre">explorer</span></code>.
-Esto ha recuperado el sistema mostrando el entorno gráfico.
-Analiza esto.</p>
+<p>En una computadora con un procesador celeron -ya obsoleto, al hacer la instalación de windows 10 en un disco SSD(nuevo), se detecta que el procesador está muy ocupado. Ha pasado cerca de 20 minutos cargando con un porcentaje de uso de un 100%.
+La pantalla apenas es capaz de mostrar el puntero del ratón. Se decidide entonces, abrir el <strong>administrador de tareas</strong> -&gt; <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">nueva</kbd> <kbd class="kbd docutils literal notranslate">tarea</kbd></kbd> -&gt; y lanzar el <code class="docutils literal notranslate"><span class="pre">explorer</span></code>.</p>
+<p>Esto ha recuperado el sistema mostrando el entorno gráfico.</p>
 <hr class="docutils" />
-<section id="analisis-de-la-situacion-del-procesador-celeron-en-windows-10">
-<h2>Análisis de la Situación del Procesador Celeron en Windows 10<a class="headerlink" href="#analisis-de-la-situacion-del-procesador-celeron-en-windows-10" title="Permalink to this heading"></a></h2>
+<section id="analisis-de-la-situacion-del-procesador">
+<h2>Análisis de la Situación del Procesador<a class="headerlink" href="#analisis-de-la-situacion-del-procesador" title="Permalink to this heading"></a></h2>
 <section id="que-paso">
 <h3>¿Qué pasó?<a class="headerlink" href="#que-paso" title="Permalink to this heading"></a></h3>
-<p>Lo que experimentaste es un <strong>cuello de botella extremo</strong> causado por el procesador Celeron obsoleto. Aunque hayas instalado Windows 10 en un <strong>disco SSD nuevo</strong> (lo cual es excelente para la velocidad general del sistema), el procesador es el encargado de ejecutar todas las instrucciones del sistema operativo y las aplicaciones.</p>
-<p>Aquí está el desglose:</p>
+<p>Lo que experimentó fue un <strong>cuello de botella extremo</strong> causado por el procesador Celeron obsoleto. Aun habiendo instalado Windows 10 en un <strong>disco SSD nuevo</strong> (lo cual es excelente para la velocidad general del sistema), el procesador es el encargado de ejecutar todas las instrucciones del sistema operativo y las aplicaciones.</p>
 <ul class="simple">
 <li><p><strong>Uso del 100% del procesador:</strong> Esto significa que el Celeron estaba trabajando a su máxima capacidad, pero aún así no era capaz de procesar todas las tareas que Windows 10 le estaba pidiendo. Windows 10, incluso en una instalación limpia, tiene muchos procesos en segundo plano que requieren cierta potencia de procesamiento.</p></li>
 <li><p><strong>Pantalla apenas mostrando el puntero:</strong> Cuando el procesador está tan sobrecargado, el sistema operativo no puede siquiera renderizar la interfaz gráfica de usuario (GUI) de manera eficiente. El puntero del ratón se movía con dificultad porque el procesador no podía darle prioridad a esa tarea.</p></li>
-<li><p><strong>Lanzar `explorer.exe` desde el Administrador de Tareas:</strong> ¡Esta fue una excelente solución temporal! Lo que hiciste fue reiniciar el proceso <cite>explorer.exe</cite>. Este es el proceso que gestiona la interfaz gráfica de Windows (el escritorio, la barra de tareas, los iconos, etc.). Es probable que, por alguna razón (quizás un proceso de inicialización de Windows que se quedó “colgado” o prioridades mal gestionadas por el sistema debido a la falta de recursos del procesador), el <cite>explorer.exe</cite> no se iniciara correctamente o se quedara atascado. Al relanzarlo, le diste un “empujón” y, como es un proceso crítico para la visualización, el sistema le dio más prioridad, permitiéndote ver el entorno gráfico.</p></li>
+<li><p><strong>Lanzar `explorer.exe` desde el Administrador de Tareas:</strong> ¡Esta fue una excelente solución temporal! Lo que se hizo fue reiniciar el proceso <code class="docutils literal notranslate"><span class="pre">explorer.exe</span></code>. Este es el proceso que gestiona la interfaz gráfica de Windows (el escritorio, la barra de tareas, los iconos, etc.). Es probable que, por alguna razón (quizás un proceso de inicialización de Windows que se quedó “colgado” o prioridades mal gestionadas por el sistema debido a la falta de recursos del procesador), el <em>explorer.exe</em> no se iniciara correctamente o se quedara atascado. Al relanzarlo, se le dió un “empujón” y, como es un proceso crítico para la visualización, el sistema le dio más prioridad, permitiendo ver el entorno gráfico.</p></li>
 </ul>
 </section>
 <section id="por-que-sucedio">
@@ -183,22 +177,24 @@ Analiza esto.</p>
 </section>
 <section id="que-hacer-ahora">
 <h3>¿Qué hacer ahora?<a class="headerlink" href="#que-hacer-ahora" title="Permalink to this heading"></a></h3>
-<p>Dado que ya has experimentado este cuello de botella, aquí tienes algunas opciones y recomendaciones:</p>
+<p>Estas son algunas opciones y recomendaciones que podrán mejorar la experiencia de usuario:</p>
 <ol class="arabic simple">
-<li><p><strong>Optimizar Windows 10 (limitado):</strong>
-* <strong>Desactivar programas de inicio:</strong> Usa el Administrador de Tareas (pestaña “Inicio”) para desactivar cualquier programa que no necesites que se ejecute al inicio.
-* <strong>Desactivar efectos visuales:</strong> Busca “Ajustar la apariencia y el rendimiento de Windows” en el menú de inicio y selecciona “Ajustar para obtener el mejor rendimiento”. Esto desactiva animaciones y efectos gráficos que consumen recursos.
-* <strong>Configurar Windows Update:</strong> Puedes intentar configurar las actualizaciones para que no se descarguen e instalen automáticamente en los momentos de mayor uso, o programarlas para horas de inactividad. Sin embargo, no se recomienda desactivarlas por completo por motivos de seguridad.
-* <strong>Desactivar procesos en segundo plano no esenciales:</strong> Ve a “Configuración” &gt; “Privacidad” &gt; “Aplicaciones en segundo plano” y desactiva las que no necesites.
-* <strong>Considerar un antivirus más ligero:</strong> Windows Defender es bueno, pero a veces puede ser un poco pesado para sistemas antiguos. Si puedes, considera una solución antivirus de terceros más ligera.</p></li>
-<li><p><strong>Considerar un Sistema Operativo Más Ligero:</strong>
-* <strong>Windows 7 o Windows 8.1:</strong> Si tu hardware soporta controladores para estas versiones, podrían ofrecer un rendimiento mucho mejor, ya que son menos exigentes. Sin embargo, ten en cuenta que Windows 7 ya no recibe soporte de seguridad.
-* <strong>Distribución de Linux Ligera:</strong> Esta es a menudo la mejor opción para hardware antiguo. Distribuciones como <strong>Lubuntu</strong>, <strong>Xubuntu</strong>, <strong>Linux Mint XFCE</strong>, o <strong>Puppy Linux</strong> están diseñadas para ser muy ligeras y funcionarán mucho mejor con tu Celeron. Son gratuitas y te permiten seguir usando tu computadora para navegación web, documentos y tareas básicas sin problemas.</p></li>
+<li><p><strong>Optimizar Windows 10 (limitado):</strong></p>
+<ul class="simple">
+<li><p><strong>Desactivar programas de inicio:</strong> Usar el Administrador de Tareas (pestaña “Inicio”) para desactivar cualquier programa que no necesites que se ejecute al inicio.</p></li>
+<li><p><strong>Desactivar efectos visuales:</strong> “Ajustar la apariencia y el rendimiento de Windows” en el menú de inicio y seleccionar “Ajustar para obtener el mejor rendimiento”. Esto desactiva animaciones y efectos gráficos que consumen recursos.</p></li>
+<li><p><strong>Configurar Windows Update:</strong> Se podrá intentar configurar las actualizaciones para que no se descarguen e instalen automáticamente en los momentos de mayor uso, o programarlas para horas de inactividad. Sin embargo, no se recomienda desactivarlas por completo por motivos de seguridad.</p></li>
+<li><p><strong>Desactivar procesos en segundo plano no esenciales:</strong> Ir a “Configuración” &gt; “Privacidad” &gt; “Aplicaciones en segundo plano” y desactivar las que no sean necesarias.</p></li>
+<li><p><strong>Considerar un antivirus más ligero:</strong> Windows Defender es bueno, pero a veces puede ser un poco pesado para sistemas antiguos. Si es posible, considerar una solución antivirus de terceros más ligera.</p></li>
+</ul>
+</li>
+<li><p><strong>Sistema Operativo Más Ligero:</strong>
+* <strong>Windows 7 o Windows 8.1:</strong> Si el hardware soporta controladores para estas versiones, podrían ofrecer un rendimiento mucho mejor, ya que son menos exigentes. Sin embargo, deberá tenerse en cuenta que Windows 7 ya no recibe soporte de seguridad.
+* <strong>Distribución de Linux Ligera:</strong> Esta es a menudo la mejor opción para hardware antiguo. Distribuciones como <strong>Lubuntu</strong>, <strong>Xubuntu</strong>, <strong>Linux Mint XFCE</strong>, o <strong>Puppy Linux</strong> están diseñadas para ser muy ligeras y funcionarán mucho mejor con el Celeron. Son gratuitas y permiten seguir usando ls computadora para navegación web, documentos y tareas básicas sin problemas.</p></li>
 <li><p><strong>Actualización de Hardware (si es posible y vale la pena):</strong>
-* Si tu placa base lo permite, podrías considerar actualizar el procesador a un modelo más potente dentro de la misma arquitectura (por ejemplo, un Pentium o Core 2 Duo si es un socket compatible). Sin embargo, esto a menudo no es económicamente viable en equipos muy antiguos, ya que el costo de la actualización podría acercarse al de una computadora nueva básica.</p></li>
+* Si la placa base lo permite, considerar actualizar el procesador a un modelo más potente dentro de la misma arquitectura (por ejemplo, un Pentium o Core 2 Duo si es un socket compatible). Sin embargo, esto a menudo no es económicamente viable en equipos muy antiguos, ya que el costo de la actualización podría acercarse al de una computadora nueva básica.</p></li>
 </ol>
-<p>En resumen, lo que experimentaste es un síntoma claro de un procesador que no puede seguir el ritmo de Windows 10. La solución de lanzar <cite>explorer.exe</cite> fue un “parche” que permitió que la interfaz gráfica se mostrara, pero la causa raíz (el procesador obsoleto) persiste.</p>
-<p>¿Te gustaría que profundicemos en alguna de estas opciones, como la instalación de una distribución de Linux ligera?</p>
+<p>En resumen, lo que se experimentó fue un síntoma claro de un procesador que no puede seguir el ritmo de Windows 10. La solución de lanzar <code class="docutils literal notranslate"><span class="pre">explorer.exe</span></code> fue un <em>parche</em> que permitió que la interfaz gráfica se mostrara, pero la causa raíz (el procesador obsoleto) persiste.</p>
 </section>
 </section>
 </section>
