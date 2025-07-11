@@ -44,7 +44,9 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    OS/caracteristicasDeWindows10.rst
    OS/caracteristicasDeWindows11.rst
    OS/caracteristicasDeLinux-rhelVSdebian.rst
-
+   OS/VirtualBox.rst
+   
+   
 .. tip::
 
 	Documentos disponibles sobre la instalación del sistema operativo. También podrá inncluir ejercicios propuestos.
@@ -82,6 +84,7 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    :caption: Office, Excel:
 	
    Office/excel.rst
+   Office/excel-2.rst
    
 .. tip::
    

@@ -1,4 +1,4 @@
-Características de Un sistema Linux
+Características de un sistema Linux
 =======================================
 
 Las distribuciones de Linux se agrupan a menudo en dos grandes ecosistemas: el ecosistema Red Hat (que incluye Red Hat Enterprise Linux, CentOS Stream, Fedora) y el ecosistema Debian (que incluye Debian, Ubuntu, Linux Mint). Aunque ambos son sistemas operativos basados en Linux, tienen filosofías, enfoques y características clave que los distinguen.
