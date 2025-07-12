@@ -30,7 +30,7 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 
 .. toctree::
    :maxdepth: 1
-   :caption: OS installation:
+   :caption: Instalación Sistema Operativo(SO):
 
    OS/caracteristicasEquipo.rst
    OS/particionadorDeWindows.rst
