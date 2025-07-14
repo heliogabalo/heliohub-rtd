@@ -1,16 +1,6 @@
 Virtual Box
 ==============
 
-
-.. tip:: 
-    
-    **Recordatorio !!!**
-    
-    La tecla que deberás utilizar en el examen, para hacer la captura de pantalla de los ejercicios:
-
-      :kbd:`ctrl Dcho` + :kbd:`E`
-
-
 Prerequisitos
 -----------------
 
@@ -19,6 +9,16 @@ En primer lugar habrá que comprobar que la característica de la placa base ``V
 En el sistema académico donde se realiza esta práctica dicha característica se encuentra en:
 
    :kbd:`Settings` -> :kbd:`varios` -> ``VT-d``
+
+
+.. note::
+
+   **IOMMU**, Input Output Memory Management Unit:
+   
+   - **AMD**: AMD-Vi, IOMMU.
+   - **Intel**: VT-d.
+      ... el procesador puede o no, tener dicha capacidad. Para poder utilizarla, la placa base debe ser compatible y deberá ser activada como función de la propia placa, ya que el procesador no precisa de "interruptor" para activar/desactivar la característica.
+
 
 
 Entorno Virtual Box
