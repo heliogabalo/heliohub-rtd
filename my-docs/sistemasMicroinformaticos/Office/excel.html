@@ -24,7 +24,7 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Unordered Topics" href="../../Unordered/index.html" />
+    <link rel="next" title="Parte 2" href="excel-2.html" />
     <link rel="prev" title="Tercera parte" href="Word-apuntes-parte3.html" /> 
 </head>
 
@@ -87,6 +87,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/arquitecturaVonNeuman.html">La arquitectura Von Neumann</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/VonNeumann.html">John von Neumann</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/Memorias.html">Tipos y características de memoria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/velocidadModulDDR.html">Velocidad en módulos DDR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/modulosMemActuales.html">Módulos de Memoria RAM Actuales (2024)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/perifericos.html">Periféricos clasificados por tipo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/integratedCards.html">Verificar si la placa base integra tarjeta gráfica (GPU)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/Buses.html">Buses del equipo</a></li>
@@ -107,7 +109,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../OS/caracteristicasDeWindows11.html">Características principales de Windows 11</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../OS/caracteristicasDeLinux-rhelVSdebian.html">Características de un sistema Linux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../OS/VirtualBox.html">Virtual Box</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Sistema/evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/info.html">Información del sistema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/plataforma.html">Concepto “Plataforma” en Computación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Redes/redes_basic_info.html">Información general</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte1.html">Primera parte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte2.html">Segunda parte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte3.html">Tercera parte</a></li>
@@ -116,13 +120,17 @@
 <li class="toctree-l4"><a class="reference internal" href="#bordes">Bordes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#formato-en-los-numeros">Formato en los números</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#fechas">Fechas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#como-restar-fechas">Cómo restar fechas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#series">Series</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#estilo-nombre-y-posicion-de-las-hojas">Estilo, nombre  y posición de las hojas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#operaciones">Operaciones</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#formulas">Fórmulas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#funciones">Funciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#condicional-simple-si">Condicional simple, <code class="docutils literal notranslate"><span class="pre">SI</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inmobilizar-el-cuadro-o-tabla">Inmobilizar el cuadro o tabla</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="excel-2.html">Parte 2</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#downloadable-files">Downloadable files</a></li>
@@ -218,6 +226,10 @@ En la pestaña Inicio, al final; dentro del grupo Edición, podremos utilizar el
 <p>Si escribimos la hora:</p>
 <p>Desplegar el botón <kbd class="kbd docutils literal notranslate">fecha</kbd> -&gt; más formatos de números -&gt; categoría -&gt; hora</p>
 </section>
+<section id="como-restar-fechas">
+<h2>Cómo restar fechas<a class="headerlink" href="#como-restar-fechas" title="Permalink to this heading"></a></h2>
+<p>En la ficha inicio, bloque Número, botón desplegable “Formato número”, podremos elegir la opción número. Representa la fecha desde uno de enero de 1900.</p>
+</section>
 <section id="series">
 <h2>Series<a class="headerlink" href="#series" title="Permalink to this heading"></a></h2>
 <p>Excel es capaz de recordar listas conocidas; lunues, martes, miércoles.., Enero, Febrero, Marzo..
@@ -284,6 +296,46 @@ Para indicar que escriba automáticamente el siguiente elemento en la lista  …
 </li>
 </ul>
 </section>
+<section id="condicional-simple-si">
+<h2>Condicional simple, <code class="docutils literal notranslate"><span class="pre">SI</span></code><a class="headerlink" href="#condicional-simple-si" title="Permalink to this heading"></a></h2>
+<p>Con esta función se deberá cumplir una condición:</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">si</span><span class="p">(</span><span class="n">condición</span><span class="p">;</span><span class="w"> </span><span class="n">si_se_cumple</span><span class="p">;</span><span class="w"> </span><span class="n">si_no_se_cumple</span><span class="p">)</span>
+<span class="cp"># @: Prueba_lógica</span>
+<span class="cp"># @: Valor_si_verdadero</span>
+<span class="cp"># @: Valor_si_falso</span>
+
+<span class="cp"># Ejemplo:</span>
+<span class="o">=</span><span class="n">si</span><span class="p">(</span><span class="n">d9</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="s">&quot;superior&quot;</span><span class="p">;</span><span class="w"> </span><span class="s">&quot;inferior&quot;</span><span class="p">)</span>
+<span class="o">=</span><span class="n">SI</span><span class="p">(</span><span class="n">I9</span><span class="o">&gt;</span><span class="n">$I$25</span><span class="p">;</span><span class="s">&quot;superior al promedio&quot;</span><span class="p">;</span><span class="s">&quot;&quot;</span><span class="p">)</span>
+<span class="o">=</span><span class="n">SI</span><span class="p">(</span><span class="n">I9</span><span class="o">&gt;</span><span class="mi">500</span><span class="p">;</span><span class="n">I9</span><span class="mi">-50</span><span class="p">;</span><span class="n">I9</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>En el ejemplo la función escribiría el texto superior/inferior en función del valor que encuentre.</p>
+<blockquote>
+<div><p><em>Si el precio total de la cortina es mayor a 500€ descuéntale 50€, si no, deja el precio tal cuál.</em></p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>libro de excel</strong>: ejercicios de excel, <strong>hoja</strong>: Cortinas</p>
+</div>
+<p>Esta función permite <em>anidar</em> operaciones; PROMEDIO, MAXimo, MINimo. Además, permite devolver un campo de texto implementado préviamente. La iteración de la fórmula, sobre las subsiguientes filas, no necisita ser fijada. Ejemplo:</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="cp"># En este caso fijamos el rango de la operación</span>
+<span class="cp"># anidada; max() ya que su valor, es el que será</span>
+<span class="cp"># comparado en las subsiguientes filas.</span>
+<span class="o">=</span><span class="n">SI</span><span class="p">(</span><span class="n">J3</span><span class="o">=</span><span class="n">MAX</span><span class="p">(</span><span class="n">$J$3</span><span class="o">:</span><span class="n">$J$8</span><span class="p">);</span><span class="n">A3</span><span class="p">;</span><span class="s">&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="inmobilizar-el-cuadro-o-tabla">
+<h2>Inmobilizar el cuadro o tabla<a class="headerlink" href="#inmobilizar-el-cuadro-o-tabla" title="Permalink to this heading"></a></h2>
+<p>Desde la ficha <strong>Vista</strong> botón <strong>Inmobilizar/Mobilizar panales</strong>.</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="o">+---+---+---+---+</span>
+<span class="o">+</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">C</span><span class="w"> </span><span class="o">+-^-+</span>
+<span class="o">+===+===+===+---+</span>
+</pre></div>
+</div>
+<p>Si queremos inmobilizar un grupo de celdas, por ejemplo aquellas que contienen una tabla con datos, habrá que situar primero el cursor en el lugar adecuado, en este ejemplo está situado donde aparece el símbolo <code class="docutils literal notranslate"><span class="pre">^</span></code>. A partir de este momento si desplazamos la hoja de cálculo horizontalmente; mediate la barra de desplazamiento, podremos observar como los datos de la tabla permanecen fijos en la pantalla.</p>
+</section>
 </section>
 
 
@@ -291,7 +343,7 @@ Para indicar que escriba automáticamente el siguiente elemento en la lista  …
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="Word-apuntes-parte3.html" class="btn btn-neutral float-left" title="Tercera parte" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../Unordered/index.html" class="btn btn-neutral float-right" title="Unordered Topics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="excel-2.html" class="btn btn-neutral float-right" title="Parte 2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

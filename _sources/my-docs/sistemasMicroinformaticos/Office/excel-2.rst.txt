@@ -10,11 +10,7 @@ Mover datos
    - Seleccionamos los elementos de la columna y buscamos las cuatros flechas sobre el borde de la selección; cuando clicamos aparece el puntero blanco:
    
    * Si arrastramos la selección moveremos los datos al lugar elegido.
-   * Si al arrastrar la selección mantenemos pulsado la tecla :kbd:`ctrl`
-
-.. tip::
-
-   añsldkjasdflñkj
+   * Si al arrastrar la selección mantenemos pulsado la tecla :kbd:`ctrl` copiaremos los datos en su lugar.
 
 
 Referencias
@@ -24,18 +20,15 @@ Referencias
    *Situamos el cursor hasta que aparecer el cursor con la cruz negra(+).*
 - **Absoluta**: :kbd:`F4`. Es un tipo de referencia de celda que permanece constante, es decir, no cambia incluso cuando la fórmula se copia o se mueve a otra celda.
 
-.. note::
+   *Reflexión: es relativa...es Absoluta...*
 
-   *Reflexión*: es relativa...es Absoluta...
+En primer lugar habrá que situar el puntero del ratón (o cursor) Sobre la barra de fórmulas, a continuación habrá que identificar la cadena de texto que define el campo en cuestión, y fijar el dato con :kbd:`F4`.
 
-
-
-Sobre la barra de fórmulas nos colocamos en la cadena que de texto que define (fijar F4)
 - **Mixtas**: Cuando vemos datos en horizontal y en vertical, y aparece la necesidada de arrastrar en diagonal, para que el cálculo sea aplicado en todo el area elegida.
 
 .. note::
    
-   *Deberemos fijar la columna y la fila correcta.*
+   *Deberemos fijar la columna y la fila correcta.* Decimos arrastrar en diagonal, cuando en realidad el movimiento preciso para seleccionar el área de la referencia mixta, sugiera más un ``L``, ya que primero arrastramos en una dirección y luego en la otra.
 
 
 Cambiar tamaño de filas y columnas
@@ -43,37 +36,52 @@ Cambiar tamaño de filas y columnas
 
 Seleccionar todas la filas a las que queramos cambiar la altura o anchura, y desplazar el ratón hasta ajustar.
 
-
-.. tip::
-   
-Tecla :kbd:`F2` muestra por colores las cesldas a las que pertenece la oeración. 
+   Tecla :kbd:`F2` muestra por colores las cesldas a las que pertenece la oeración. 
 
 Porcentaje de un valor
 -------------------------
 
 Para calcular el porcentaje que representa un valor con respecto a la suma de una lista de valores, dividimos el elemento entre el valor total que representa la suma de todos los elementos y multiplicamos por cien(100%). Por ejemplo:
 
-.. code:: bc
+      .. code:: bc
 
-      200 -- elemento
-      500
-      100
-      400
-      200
-      500
-      ----
-      1900
-      (200 / 1900) * 100 = 10,53%
+         200 -- elemento
+         500
+         100
+         400
+         200
+         500
+         ----
+         1900
+         (200 / 1900) * 100 = 10,53%
+         # Lo pequeño entre lo grande, nos dá la relación del valor
+         # con restecto al total.
 
+.. tip::
 
+   **Mnemotécnico para las formulas de cálculo de descuento e IVA**.
+   
+   .. code-block:: 
+   
+      TOTAL =  TOTAL * DTO
+      TOTAL - DTO = TOTAL - DTO
+      IVA  = TOTAL - DTO * IVA
+      TOTAL - DTO + IVA = TOTAL + IVA
 
-**Mnemotécnico para las formulas de cálculo de descuento e IVA**. 
-
-   TOTAL =  TOTAL * DTO
-   TOTAL - DTO = TOTAL - DTO
-   IVA  = TOTAL - DTO * IVA
-   TOTAL - DTO + IVA = TOTAL + IVA
-
+      val = 100
+      dto = 10%
+      iva = 21%
+			val * dto = valor de descuento. 
+			val - val * dto = valor con el descuento aplicado.
+			val * iva = valor del iva.
+			val + val * iva = valor con el iva ya aplicado.
+			# A la base imponible deberemos aplicarle el descuento.
+			# A la base imponible, con el descuento aplicado, 
+			# debemos cargarle el IVA(que siempre es repercutido).
+			###############
+			## Si queremos extraer el IVA de un valor:
+			121 / 1.21 = val # valor sin el IVA
+			
 
 Combinar rápidamente
 -----------------------

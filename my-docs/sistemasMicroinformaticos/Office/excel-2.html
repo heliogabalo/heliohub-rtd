@@ -24,7 +24,7 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Unordered Topics" href="../../Unordered/index.html" />
+    <link rel="next" title="Parte 3" href="excel-3.html" />
     <link rel="prev" title="Parte 1" href="excel.html" /> 
 </head>
 
@@ -87,6 +87,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/arquitecturaVonNeuman.html">La arquitectura Von Neumann</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/VonNeumann.html">John von Neumann</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/Memorias.html">Tipos y características de memoria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/velocidadModulDDR.html">Velocidad en módulos DDR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sistema/modulosMemActuales.html">Módulos de Memoria RAM Actuales (2024)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/perifericos.html">Periféricos clasificados por tipo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/integratedCards.html">Verificar si la placa base integra tarjeta gráfica (GPU)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sistema/Buses.html">Buses del equipo</a></li>
@@ -107,7 +109,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../OS/caracteristicasDeWindows11.html">Características principales de Windows 11</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../OS/caracteristicasDeLinux-rhelVSdebian.html">Características de un sistema Linux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../OS/VirtualBox.html">Virtual Box</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Sistema/evolucionProcesadores.html">Evolución de Procesadores (Años 90 - Actualidad)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/info.html">Información del sistema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/plataforma.html">Concepto “Plataforma” en Computación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Redes/redes_basic_info.html">Información general</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte1.html">Primera parte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte2.html">Segunda parte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte3.html">Tercera parte</a></li>
@@ -123,6 +127,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#instancia-de-hojas-de-excel">Instancia de hojas de Excel</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="excel-3.html">Parte 3</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#downloadable-files">Downloadable files</a></li>
@@ -170,46 +175,47 @@
 </ul>
 <ul class="simple">
 <li><p>Si arrastramos la selección moveremos los datos al lugar elegido.</p></li>
-<li><p>Si al arrastrar la selección mantenemos pulsado la tecla <kbd class="kbd docutils literal notranslate">ctrl</kbd></p></li>
+<li><p>Si al arrastrar la selección mantenemos pulsado la tecla <kbd class="kbd docutils literal notranslate">ctrl</kbd> copiaremos los datos en su lugar.</p></li>
 </ul>
 </div></blockquote>
 </li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>añsldkjasdflñkj</p>
-</div>
 </section>
 <section id="referencias">
 <h2>Referencias<a class="headerlink" href="#referencias" title="Permalink to this heading"></a></h2>
-<ul class="simple">
+<ul>
 <li><dl class="simple">
 <dt><strong>Relativas</strong>: cuando se arrastra una operación, a lo largo de las celdas contiguas. Se hace la misma operación pero siempre con las celdas que hay debajo.</dt><dd><p><em>Situamos el cursor hasta que aparecer el cursor con la cruz negra(+).</em></p>
 </dd>
 </dl>
 </li>
-<li><p><strong>Absoluta</strong>: <kbd class="kbd docutils literal notranslate">F4</kbd>. Es un tipo de referencia de celda que permanece constante, es decir, no cambia incluso cuando la fórmula se copia o se mueve a otra celda.</p></li>
+<li><p><strong>Absoluta</strong>: <kbd class="kbd docutils literal notranslate">F4</kbd>. Es un tipo de referencia de celda que permanece constante, es decir, no cambia incluso cuando la fórmula se copia o se mueve a otra celda.</p>
+<blockquote>
+<div><p><em>Reflexión: es relativa…es Absoluta…</em></p>
+</div></blockquote>
+</li>
+</ul>
+<p>En primer lugar habrá que situar el puntero del ratón (o cursor) Sobre la barra de fórmulas, a continuación habrá que identificar la cadena de texto que define el campo en cuestión, y fijar el dato con <kbd class="kbd docutils literal notranslate">F4</kbd>.</p>
+<ul class="simple">
+<li><p><strong>Mixtas</strong>: Cuando vemos datos en horizontal y en vertical, y aparece la necesidada de arrastrar en diagonal, para que el cálculo sea aplicado en todo el area elegida.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><em>Reflexión</em>: es relativa…es Absoluta…</p>
-</div>
-<p>Sobre la barra de fórmulas nos colocamos en la cadena que de texto que define (fijar F4)
-- <strong>Mixtas</strong>: Cuando vemos datos en horizontal y en vertical, y aparece la necesidada de arrastrar en diagonal, para que el cálculo sea aplicado en todo el area elegida.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em>Deberemos fijar la columna y la fila correcta.</em></p>
+<p><em>Deberemos fijar la columna y la fila correcta.</em> Decimos arrastrar en diagonal, cuando en realidad el movimiento preciso para seleccionar el área de la referencia mixta, sugiera más un <code class="docutils literal notranslate"><span class="pre">L</span></code>, ya que primero arrastramos en una dirección y luego en la otra.</p>
 </div>
 </section>
 <section id="cambiar-tamano-de-filas-y-columnas">
 <h2>Cambiar tamaño de filas y columnas<a class="headerlink" href="#cambiar-tamano-de-filas-y-columnas" title="Permalink to this heading"></a></h2>
 <p>Seleccionar todas la filas a las que queramos cambiar la altura o anchura, y desplazar el ratón hasta ajustar.</p>
-<p>Tecla <kbd class="kbd docutils literal notranslate">F2</kbd> muestra por colores las cesldas a las que pertenece la oeración.</p>
+<blockquote>
+<div><p>Tecla <kbd class="kbd docutils literal notranslate">F2</kbd> muestra por colores las cesldas a las que pertenece la oeración.</p>
+</div></blockquote>
 </section>
 <section id="porcentaje-de-un-valor">
 <h2>Porcentaje de un valor<a class="headerlink" href="#porcentaje-de-un-valor" title="Permalink to this heading"></a></h2>
 <p>Para calcular el porcentaje que representa un valor con respecto a la suma de una lista de valores, dividimos el elemento entre el valor total que representa la suma de todos los elementos y multiplicamos por cien(100%). Por ejemplo:</p>
-<div class="highlight-bc notranslate"><div class="highlight"><pre><span></span><span class="m">200</span> <span class="o">--</span> elemento
+<blockquote>
+<div><div class="highlight-bc notranslate"><div class="highlight"><pre><span></span><span class="m">200</span> <span class="o">--</span> elemento
 <span class="m">500</span>
 <span class="m">100</span>
 <span class="m">400</span>
@@ -218,15 +224,35 @@
 <span class="o">----</span>
 <span class="m">1900</span>
 <span class="p">(</span><span class="m">200</span> <span class="o">/</span> <span class="m">1900</span><span class="p">)</span> <span class="o">*</span> <span class="m">100</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span><span class="m">53</span><span class="o">%</span>
+# Lo pequeño entre lo grande<span class="p">,</span> nos dá la relación del valor
+# con restecto al total.
 </pre></div>
 </div>
-<p><strong>Mnemotécnico para las formulas de cálculo de descuento e IVA</strong>.</p>
-<blockquote>
-<div><p>TOTAL =  TOTAL * DTO
-TOTAL - DTO = TOTAL - DTO
-IVA  = TOTAL - DTO * IVA
-TOTAL - DTO + IVA = TOTAL + IVA</p>
 </div></blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Mnemotécnico para las formulas de cálculo de descuento e IVA</strong>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TOTAL</span> <span class="o">=</span>  <span class="n">TOTAL</span> <span class="o">*</span> <span class="n">DTO</span>
+<span class="n">TOTAL</span> <span class="o">-</span> <span class="n">DTO</span> <span class="o">=</span> <span class="n">TOTAL</span> <span class="o">-</span> <span class="n">DTO</span>
+<span class="n">IVA</span>  <span class="o">=</span> <span class="n">TOTAL</span> <span class="o">-</span> <span class="n">DTO</span> <span class="o">*</span> <span class="n">IVA</span>
+<span class="n">TOTAL</span> <span class="o">-</span> <span class="n">DTO</span> <span class="o">+</span> <span class="n">IVA</span> <span class="o">=</span> <span class="n">TOTAL</span> <span class="o">+</span> <span class="n">IVA</span>
+
+<span class="n">val</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">dto</span> <span class="o">=</span> <span class="mi">10</span><span class="o">%</span>
+<span class="n">iva</span> <span class="o">=</span> <span class="mi">21</span><span class="o">%</span>
+                  <span class="n">val</span> <span class="o">*</span> <span class="n">dto</span> <span class="o">=</span> <span class="n">valor</span> <span class="n">de</span> <span class="n">descuento</span><span class="o">.</span>
+                  <span class="n">val</span> <span class="o">-</span> <span class="n">val</span> <span class="o">*</span> <span class="n">dto</span> <span class="o">=</span> <span class="n">valor</span> <span class="n">con</span> <span class="n">el</span> <span class="n">descuento</span> <span class="n">aplicado</span><span class="o">.</span>
+                  <span class="n">val</span> <span class="o">*</span> <span class="n">iva</span> <span class="o">=</span> <span class="n">valor</span> <span class="k">del</span> <span class="n">iva</span><span class="o">.</span>
+                  <span class="n">val</span> <span class="o">+</span> <span class="n">val</span> <span class="o">*</span> <span class="n">iva</span> <span class="o">=</span> <span class="n">valor</span> <span class="n">con</span> <span class="n">el</span> <span class="n">iva</span> <span class="n">ya</span> <span class="n">aplicado</span><span class="o">.</span>
+                  <span class="c1"># A la base imponible deberemos aplicarle el descuento.</span>
+                  <span class="c1"># A la base imponible, con el descuento aplicado,</span>
+                  <span class="c1"># debemos cargarle el IVA(que siempre es repercutido).</span>
+                  <span class="c1">###############</span>
+                  <span class="c1">## Si queremos extraer el IVA de un valor:</span>
+                  <span class="mi">121</span> <span class="o">/</span> <span class="mf">1.21</span> <span class="o">=</span> <span class="n">val</span> <span class="c1"># valor sin el IVA</span>
+</pre></div>
+</div>
+</div>
 </section>
 <section id="combinar-rapidamente">
 <h2>Combinar rápidamente<a class="headerlink" href="#combinar-rapidamente" title="Permalink to this heading"></a></h2>
@@ -269,7 +295,7 @@ Para borrar el comentario seguiremos el mismo procedimiento.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="excel.html" class="btn btn-neutral float-left" title="Parte 1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../Unordered/index.html" class="btn btn-neutral float-right" title="Unordered Topics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="excel-3.html" class="btn btn-neutral float-right" title="Parte 3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

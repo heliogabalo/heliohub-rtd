@@ -68,6 +68,11 @@ Si escribimos la hora:
 Desplegar el botón :kbd:`fecha` -> más formatos de números -> categoría -> hora
 
 
+Cómo restar fechas
+--------------------
+En la ficha inicio, bloque Número, botón desplegable "Formato número", podremos elegir la opción número. Representa la fecha desde uno de enero de 1900.
+
+
 Series
 ----------
 Excel es capaz de recordar listas conocidas; lunues, martes, miércoles.., Enero, Febrero, Marzo..
@@ -132,4 +137,56 @@ Siempre que haya que hacer una operación entre dos celdas y una contenga ``%`` 
    - Rango; el rango de celdas aplicables.
    - Criterio; si son números: ``<>, <, <=, >, >=``. Si son letras, escribiremos la cadena literal exacta.
    Para poder utilizar en esta función la opción de "fijar celda y arrastrar" deberemos hacerlo sobre el rango ``($B$2:$B$8;D14)``. Este código muestra como hemos fijado el rango, y el argumento criterio es la celda especificada que hemos escrito específicamente para evitar que cambie su valor.
+
+Condicional simple, ``SI``
+----------------------------
+
+Con esta función se deberá cumplir una condición:
+
+.. code-block:: C
+
+   =si(condición; si_se_cumple; si_no_se_cumple)
+   # @: Prueba_lógica
+   # @: Valor_si_verdadero
+   # @: Valor_si_falso
+  
+   # Ejemplo:
+   =si(d9>10; "superior"; "inferior")
+   =SI(I9>$I$25;"superior al promedio";"")
+   =SI(I9>500;I9-50;I9)
+
+En el ejemplo la función escribiría el texto superior/inferior en función del valor que encuentre.
+
+   *Si el precio total de la cortina es mayor a 500€ descuéntale 50€, si no, deja el precio tal cuál.*
+
+.. note::
+   
+   **libro de excel**: ejercicios de excel, **hoja**: Cortinas
+
+Esta función permite *anidar* operaciones; PROMEDIO, MAXimo, MINimo. Además, permite devolver un campo de texto implementado préviamente. La iteración de la fórmula, sobre las subsiguientes filas, no necisita ser fijada. Ejemplo:
+
+.. code-block:: C
+
+   # En este caso fijamos el rango de la operación
+   # anidada; max() ya que su valor, es el que será
+   # comparado en las subsiguientes filas.
+   =SI(J3=MAX($J$3:$J$8);A3;"")
+
+Inmobilizar el cuadro o tabla
+--------------------------------
+
+Desde la ficha **Vista** botón **Inmobilizar/Mobilizar panales**.
+
+.. code-block:: C
+
+   +---+---+---+---+
+   + A + B + C +-^-+
+   +===+===+===+---+
+
+Si queremos inmobilizar un grupo de celdas, por ejemplo aquellas que contienen una tabla con datos, habrá que situar primero el cursor en el lugar adecuado, en este ejemplo está situado donde aparece el símbolo ``^``. A partir de este momento si desplazamos la hoja de cálculo horizontalmente; mediate la barra de desplazamiento, podremos observar como los datos de la tabla permanecen fijos en la pantalla.
+
+.. nota::
+   
+      El anterior esquema representa una tabla de excel. Las columnas con letras, se refieren a una tabla con datos, la columna sin letra, es parte de la hoja de excel que aún está en blanco
+
 

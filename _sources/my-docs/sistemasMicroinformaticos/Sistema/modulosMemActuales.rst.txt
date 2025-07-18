@@ -95,9 +95,10 @@ Tendencias Futuras
 - **DDR6**: Esperado para 2026–2027 (velocidades >12,000 MT/s).
 - **LPDDR6**: En desarrollo para móviles (mayor eficiencia).
 - **Memoria 3D Stacked**: Integración vertical (ej. HBM3, HBM-PIM).
-``` 
 
-### Notas:
+-------
+
+**Notas**:
 
 - **Obsoletos omitidos**: DDR3, DDR2, SDRAM, etc.
 - **Enfoque en actualidad**: Se incluyen estándares dominantes (2023–2024) y emergentes.

@@ -30,6 +30,8 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 
 	Esta sección contiene documentos de caracter académico o historico. También podrá inncluir ejercicios propuestos.
 
+------
+
 .. toctree::
    :maxdepth: 1
    :caption: Instalación Sistema Operativo(SO):
@@ -48,25 +50,27 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    OS/caracteristicasDeLinux-rhelVSdebian.rst
    OS/VirtualBox.rst
    OS/info.rst
+   OS/plataforma.rst
    
    
 .. tip::
 
 	Documentos disponibles sobre la instalación del sistema operativo. También podrá inncluir ejercicios propuestos.
 
+-----
 
 .. toctree::
    :maxdepth: 1
    :caption: Redes:
 
-   Sistema/evolucionProcesadores.rst
-   
+   Redes/redes_basic_info.rst
    
 .. note::
-   
-	Instalación configuración de redes. También podrá inncluir ejercicios propuestos.
+
+	Instalación y configuración de redes. También podrá inncluir ejercicios propuestos.
 	
-	
+------	
+
 .. toctree::
    :maxdepth: 2
    :caption: Office, Word:
@@ -88,11 +92,13 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
 	
    Office/excel.rst
    Office/excel-2.rst
+   Office/excel-3.rst
    
 .. tip::
    
 	**Excel**: documentación sobre la herramienta *Excel* de *Office*.
 	
+-----
 	
 Downloadable files
 =====================
