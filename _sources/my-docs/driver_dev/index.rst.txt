@@ -28,3 +28,4 @@ This section provides documentation and references for driver development, inclu
    drv_refs/deadline-iosched.rst
    drv_refs/quick-ref-pci.rst
    watcherDocs/cleanSlab.rst
+   drv_refs/funcion_p_v.rst

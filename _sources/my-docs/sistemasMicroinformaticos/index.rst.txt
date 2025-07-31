@@ -51,7 +51,12 @@ Esta sección muestra los documentos relativos al curso Sistemas Microinformáti
    OS/VirtualBox.rst
    OS/info.rst
    OS/plataforma.rst
-   
+   OS/proxmox.rst
+   OS/atributos.rst
+   OS/administradorEquipos.rst
+   OS/asistenciaRemota.rst
+   OS/puntosRestauracion_Bauckups.rst
+   OS/ResgistroWindows.rst   
    
 .. tip::
 

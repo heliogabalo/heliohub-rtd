@@ -62,6 +62,10 @@ Se trata de una función condicional, en la que el bloque de argumentos sostiene
    # determinados los dos condicionales, podemos sustituir:
    SI(val1>obj; nameA; SI(val2=val1; ""; nameB))
    
+   # Otro ejemplo de función *recursiva*
+   SI(A1 >= 90; "Excelente";
+      SI(A1 >= 70; "Bueno";
+         SI(A1 >= 50; "Aceptable", "Insuficiente")))
    
    
    

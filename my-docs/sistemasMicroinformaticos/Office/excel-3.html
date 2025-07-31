@@ -111,6 +111,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../OS/VirtualBox.html">Virtual Box</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../OS/info.html">Información del sistema</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../OS/plataforma.html">Concepto “Plataforma” en Computación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/proxmox.html">PROXMOX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OS/atributos.html">Comando ``Attrib ``</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Redes/redes_basic_info.html">Información general</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte1.html">Primera parte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Word-apuntes-parte2.html">Segunda parte</a></li>
@@ -207,6 +209,11 @@ A continuación o bien seleccionamos uno de los formatos propuestos, o bien lo d
 <span class="cp"># Como hemos segmentado la función anidada, una vez</span>
 <span class="cp"># determinados los dos condicionales, podemos sustituir:</span>
 <span class="n">SI</span><span class="p">(</span><span class="n">val1</span><span class="o">&gt;</span><span class="n">obj</span><span class="p">;</span><span class="w"> </span><span class="n">nameA</span><span class="p">;</span><span class="w"> </span><span class="n">SI</span><span class="p">(</span><span class="n">val2</span><span class="o">=</span><span class="n">val1</span><span class="p">;</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span><span class="n">nameB</span><span class="p">))</span>
+
+<span class="cp"># Otro ejemplo de función *recursiva*</span>
+<span class="n">SI</span><span class="p">(</span><span class="n">A1</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">90</span><span class="p">;</span><span class="w"> </span><span class="s">&quot;Excelente&quot;</span><span class="p">;</span>
+<span class="w">   </span><span class="n">SI</span><span class="p">(</span><span class="n">A1</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">70</span><span class="p">;</span><span class="w"> </span><span class="s">&quot;Bueno&quot;</span><span class="p">;</span>
+<span class="w">      </span><span class="n">SI</span><span class="p">(</span><span class="n">A1</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w"> </span><span class="s">&quot;Aceptable&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Insuficiente&quot;</span><span class="p">)))</span>
 </pre></div>
 </div>
 </section>
